@@ -1,18 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { Button } from "@material-tailwind/react";
+// App.js
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Layout from './layout/Layout';
+import HomePage from './pages/home-page';
+import AboutPage from './pages/about-page';
+import OurApproachPage from './pages/our-approach-page';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <h1 className='text-red-500'>hello</h1>
-      <Button>Button</Button>
-    </>
-  )
-}
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/our-approach" element={<OurApproachPage />} />
+          {/* Add more routes as needed */}
+        </Route>
+      </Routes>
+  );
+};
 
-export default App
+export default App;
