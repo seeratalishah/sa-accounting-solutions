@@ -1,10 +1,10 @@
 // App.js
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import Layout from './layout/Layout';
-import HomePage from './pages/home-page';
-import AboutPage from './pages/about-page';
-import OurApproachPage from './pages/our-approach-page';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Layout from "./layout/Layout";
+import HomePage from "./pages/home-page";
+import AboutPage from "./pages/about-page";
+import OurApproachPage from "./pages/our-approach-page";
 
 const App = () => {
   return (

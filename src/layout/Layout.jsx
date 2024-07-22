@@ -6,7 +6,7 @@ import { FooterWithSitemap } from "../components/Footer";
 
 const Layout = () => {
   return (
-    <div className="w-full">
+    <div className="w-full max-w-[1200px] mx-auto">
       <NavbarWithMegaMenu />
       <main>
         <Outlet />

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { testimonialData } from "./data";
+import TestimonialCard from "./TestimonialCard";
 
 export function Testimonial() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -36,7 +37,7 @@ export function Testimonial() {
         </button>
         <div className="flex w-full justify-center space-x-4">
           {currentCards.map((item, index) => (
-            <Testimonial key={index} item={item} />
+            <TestimonialCard key={index} item={item} />
           ))}
         </div>
         <button
