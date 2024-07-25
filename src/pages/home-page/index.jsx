@@ -1,5 +1,4 @@
 import React from "react";
-import { GoodFitCard } from "./components/GoodFitCard";
 import NGAccounting from "./components/NGAccounting";
 import SJSF from "./components/SJSF";
 import { BIBDCard } from "./components/BIBD";
@@ -7,35 +6,48 @@ import YNOXOS from "./components/YNOXOS";
 import PFTD from "./components/PFTD";
 import ScheduleConsult from "./components/ScheduleConsult";
 import { Testimonial } from "../../components/Testimonials";
+import GoodFitCard from "./components/GoodFitCard";
 
 const HomePage = () => {
   return (
-    <div className="">
-      <div className="px-8 pt-[180px] pb-[60px] w-full">
-        <NGAccounting />
-      </div>
-      <div className="px-8 py-[60px] w-full">
+    <>
+      <section className="mt-[180px] mb-[120px] px-8">
+        <div className="max-w-[1300px] mx-auto">
+          <NGAccounting />
+        </div>
+      </section>
+      <section className="my-[120px]">
         <GoodFitCard />
-      </div>
-      <div className="px-8 py-[60px] w-full">
-        <SJSF />
-      </div>
-      <div className="px-8 py-[60px] w-full">
-        <BIBDCard />
-      </div>
-      <div className="px-8 py-[60px] w-full">
-        <YNOXOS />
-      </div>
-      <div className="px-8 py-[60px] w-full">
-        <PFTD />
-      </div>
-      <div className="px-8 py-[60px] w-full">
+      </section>
+      <section className="my-[120px] px-8">
+        <div className="max-w-[1300px] mx-auto">
+          <SJSF />
+        </div>
+      </section>
+      <section className="my-[120px] px-8">
+        <div className="max-w-[1300px] mx-auto">
+          <BIBDCard />
+        </div>
+      </section>
+      <section className="my-[120px] px-8">
+        <div className="max-w-[1300px] mx-auto">
+          <YNOXOS />
+        </div>
+      </section>
+      <section className="my-[120px] px-8">
+        <div className="max-w-[1300px] mx-auto">
+          <PFTD />
+        </div>
+      </section>
+      <section className="my-[120px]">
         <ScheduleConsult />
-      </div>
-      <div className="px-8 py-[60px] w-full">
-        <Testimonial />
-      </div>
-    </div>
+      </section>
+      <section className="my-[120px] px-8">
+        <div className="max-w-[1300px] mx-auto">
+          <Testimonial />
+        </div>
+      </section>
+    </>
   );
 };
 

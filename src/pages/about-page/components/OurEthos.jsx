@@ -1,19 +1,21 @@
 import React from "react";
 import { ourEthosData } from "../data";
 import { IconCard } from "../../../components/IconCard";
+import { Typography } from "@material-tailwind/react";
+import { cardBlueParaStyles, cardParaStyles, headingStyles } from "../../../utilities/cssHelper";
 
 const OurEthos = () => {
   return (
     <div className="flex flex-col items-center">
-      <h1 className="text-center text-[42px] font-headingText font-bold leading-[1.3]">
+      <Typography variant="h1" className={headingStyles}>
         Our Ethos.
-      </h1>
-      <p className="text-center text-lg w-full text-lightText-50 mt-2 font-paraText">
+      </Typography>
+      <Typography variant="paragraph" className={cardParaStyles}>
         The values that drive our business, our solutions and our brand.
-      </p>
-      <p className="text-center text-lg w-full text-blue-600 mb-6 font-paraText">
+      </Typography>
+      <Typography variant="lead" className={`mb-10 ${cardBlueParaStyles}`}>
         This is what makes us tick.
-      </p>
+      </Typography>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full justify-items-center">
         {ourEthosData.map((item, index) => {
           const IconComponent = item.icon;

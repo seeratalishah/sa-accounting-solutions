@@ -1,26 +1,44 @@
-import { Button } from '@material-tailwind/react'
-import React from 'react'
+import { Button, Typography } from "@material-tailwind/react";
+import React from "react";
+import lightSwooshBottom from "../../../assets/light-swoosh-bottom.svg";
+import lightSwooshTop from "../../../assets/light-swoosh-top.svg";
+import {
+  primaryButton,
+  whiteHeadingStyles,
+  whiteLongParaStyles,
+} from "../../../utilities/cssHelper";
 
 const EOS = () => {
   return (
-    <div className='bg-black-100 p-6 w-full rounded-xl flex flex-col items-center justify-center'>
-        <div>
-        <h1 className='text-center text-[35px] font-headingText font-bold leading-[1.1] text-white'>
-        Ready to transform your business’s financial future?
-      </h1>
-      <p className='text-center text-lg w-full text-lightText-50 mt-2 mb-6 font-paraText'>
-      Don’t wait; take control of your finances today.
-      </p>
-        </div>
-        <div>
-        <a href="#" className="inline-block">
-          <Button size="md" className="bg-blue-600 text-sm font-paraFont">
-            Explore Our Solutions
-          </Button>
-        </a>
-        </div>
-    </div>
-  )
-}
+    <div className="w-full flex flex-col items-center">
+      {/* Image before the main content */}
+      <img src={lightSwooshTop} alt="Image Before" className="w-full" />
 
-export default EOS
+      {/* Main content */}
+      <div className="bg-[#F3FCFE] w-full flex items-center justify-center py-16 px-8">
+        <div className="max-w-[1300px] bg-black-100 px-6 py-10 w-full rounded-[32px] flex flex-col items-center justify-center">
+          <div>
+            <Typography variant="h1" className={`text-center mb-5 ${whiteHeadingStyles}`}>
+              Ready to transform your business’s financial future?
+            </Typography>
+            <Typography variant="paragraph" className={`text-center mb-5 ${whiteLongParaStyles}`}>
+              Don’t wait; take control of your finances today.
+            </Typography>
+          </div>
+          <div>
+            <a href="#" className="inline-block">
+              <Button size="md" className={primaryButton}>
+                Explore Our Solutions
+              </Button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Image after the main content */}
+      <img src={lightSwooshBottom} alt="Image After" className="w-full" />
+    </div>
+  );
+};
+
+export default EOS;

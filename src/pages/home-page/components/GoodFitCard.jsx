@@ -1,78 +1,73 @@
+import { Button, Typography } from "@material-tailwind/react";
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import {
-  Card,
-  CardHeader,
-  CardBody,
-  Typography,
-  Button,
-} from "@material-tailwind/react";
+  whiteLongParaStyles,
+  primaryButton,
+  whiteHeadingStyles,
+} from "../../../utilities/cssHelper";
 
-export function GoodFitCard() {
+import blueSwooshBottom from "../../../assets/blue-swoosh-bottom.svg";
+import blueSwooshTop from "../../../assets/blue-swoosh-top.svg";
+
+const GoodFitCard = () => {
+  const navigate = useNavigate();
   return (
-    <Card className="w-full sm:flex-row md:flex-row lg:flex-row flex-col bg-[#283236] h-[500px]">
-      <CardHeader
-        shadow={false}
-        floated={false}
-        className="m-0 w-full sm:w-2/5 shrink-0 rounded-r-none relative"
-      >
-        <div className="absolute top-0 left-0 w-full h-full sm:block hidden">
-          <img
-            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
-            alt="card-image"
-            className="h-full w-full object-cover blur-sm"
-          />
-          <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"></div>
-        </div>
-        <div className="absolute top-10 left-0 w-full h-full flex justify-center items-start sm:items-center">
-          <Typography
-            variant="h1"
-            color="white"
-            className="font-bold text-center font-headingFont sm:text-xl text-3xl"
-          >
-            Your Heading Here
-          </Typography>
-        </div>
-      </CardHeader>
-      <CardBody>
-        <Typography
-          color="gray"
-          className="mb-4 lg:mb-8 font-normal text-white text-sm sm:text-md md:text-lg lg:text-lg font-paraFont"
-        >
-          We are ambitious accounting professionals turned disruptive
-          entrepreneurs who noticed that the accounting industry wasn’t evolving
-          with the times or with the needs of small business owners in mind.
-        </Typography>
-        <Typography
-          color="gray"
-          className="mb-4 lg:mb-8 font-normal text-white text-sm sm:text-md md:text-lg lg:text-lg font-paraFont"
-        >
-          Having significant knowledge and insight into the world of accounting,
-          technology and business process optimization, we formed Ledgerly to
-          re-shape the accounting industry to engage and excite small business
-          owners with better, faster and technology driven accounting services.
-        </Typography>
-        <a href="#" className="inline-block">
-          <Button
-            variant="text"
-            className="flex items-center gap-1 lg:gap-2 text-white text-[12px] sm:text-md md:text-lg lg:text-lg font-paraFont"
-          >
-            Find Out If We're A Good Fit
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2}
-              className="h-4 w-4"
+    <div className="w-full flex flex-col items-center">
+      {/* Image before the main content */}
+      <img src={blueSwooshTop} alt="Image Before" className="w-full" />
+
+      {/* Main content */}
+      <div className="bg-[#31B0D0] w-full flex items-center justify-center py-16 px-8">
+        <div className="max-w-[1300px] bg-black-50 text-white p-10 lg:p-16 rounded-[32px] shadow-lg w-full flex flex-col md:flex-row">
+          {/* Left Section - Heading */}
+          <div className="flex-none md:flex-1 md:text-left mb-4 md:mb-0">
+            <Typography variant="h1" className={whiteHeadingStyles}>
+              We’re more than just accountants.
+            </Typography>
+          </div>
+          {/* Divider */}
+          <div className="hidden md:block w-px bg-gray-700 mx-6"></div>
+          {/* Right Section - Content */}
+          <div className="flex flex-col gap-6">
+            <Typography
+              variant="paragraph"
+              className={`max-w-[750px] ${whiteLongParaStyles}`}
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-              />
-            </svg>
-          </Button>
-        </a>
-      </CardBody>
-    </Card>
+              We are ambitious accounting professionals turned disruptive
+              entrepreneurs who noticed that the accounting industry wasn’t
+              evolving with the times or with the needs of small business owners
+              in mind.
+            </Typography>
+            <Typography
+              variant="paragraph"
+              className={`max-w-[750px] ${whiteLongParaStyles}`}
+            >
+              Having significant knowledge and insight into the world of
+              accounting, technology and business process optimization, we
+              formed Ledgerly to re-shape the accounting industry to engage and
+              excite small business owners with better, faster and technology
+              driven accounting services.
+            </Typography>
+            <div className="flex justify-center md:justify-start">
+              <a href="#" className="inline-block">
+                <Button
+                  size="md"
+                  className={`mt-6 ${primaryButton}`}
+                  onClick={() => navigate("/future-of-accounting")}
+                >
+                  Find out if we’re a good fit
+                </Button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Image after the main content */}
+      <img src={blueSwooshBottom} alt="Image After" className="w-full" />
+    </div>
   );
-}
+};
+
+export default GoodFitCard;

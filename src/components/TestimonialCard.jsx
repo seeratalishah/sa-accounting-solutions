@@ -5,7 +5,8 @@ import {
   Typography,
   Avatar,
 } from "@material-tailwind/react";
- 
+import { cardParaStyles, cardTitle, longParaStyles } from "../utilities/cssHelper";
+
 function StarIcon() {
   return (
     <svg
@@ -22,10 +23,14 @@ function StarIcon() {
     </svg>
   );
 }
- 
-const TestimonialCard = ({item}) => {
+
+const TestimonialCard = ({ item }) => {
   return (
-    <Card color="transparent" shadow={false} className="w-full max-w-[26rem] border border-gray-200 p-4">
+    <Card
+      color="transparent"
+      shadow={false}
+      className="w-full max-w-[46rem] border border-gray-200 p-4"
+    >
       <CardHeader
         color="transparent"
         floated={false}
@@ -40,8 +45,8 @@ const TestimonialCard = ({item}) => {
         />
         <div className="flex w-full flex-col gap-0.5">
           <div className="flex items-center justify-between">
-            <Typography variant="h5" color="blue-gray">
-              Tania Andrew
+            <Typography variant="lead" className={cardTitle}>
+              Seerat Ali
             </Typography>
             <div className="5 flex items-center gap-0">
               <StarIcon />
@@ -51,16 +56,14 @@ const TestimonialCard = ({item}) => {
               <StarIcon />
             </div>
           </div>
-          <Typography color="blue-gray">Frontend Lead @ Google</Typography>
+          <Typography variant="lead" className="text-md font-normal text-black-100 font-headingFont">Frontend Lead @ Google</Typography>
         </div>
       </CardHeader>
       <CardBody className="mb-6 p-0">
-        <Typography>
-          &quot;{item.comment}&quot;
-        </Typography>
+        <Typography variant="paragraph" className={cardParaStyles}>&quot;{item.comment}&quot;</Typography>
       </CardBody>
     </Card>
   );
-}
+};
 
 export default TestimonialCard;

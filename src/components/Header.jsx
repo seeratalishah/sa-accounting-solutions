@@ -28,8 +28,10 @@ import {
   TagIcon,
   UserGroupIcon,
 } from "@heroicons/react/24/solid";
-import logo from "../assets/logo.png";
-import { NavLink } from "react-router-dom";
+import logo from "../assets/Accountingg.png";
+import { NavLink, useNavigate } from "react-router-dom";
+import { primaryButton } from "../utilities/cssHelper";
+
 
 const navListMenuItems = [
   {
@@ -91,6 +93,8 @@ function NavListMenu() {
       </a>
     ),
   );
+
+  const navigate = useNavigate();
 
   return (
     <React.Fragment>
@@ -172,6 +176,8 @@ function NavList() {
 export function NavbarWithMegaMenu() {
   const [openNav, setOpenNav] = React.useState(false);
 
+  const navigate = useNavigate();
+
   React.useEffect(() => {
     window.addEventListener(
       "resize",
@@ -180,14 +186,14 @@ export function NavbarWithMegaMenu() {
   }, []);
 
   return (
-    <Navbar className="w-full max-w-full border-none shadow-none fixed top-0 bg-white z-10">
-      <div className="flex items-center justify-between text-blue-6ray-900">
-        <NavLink to="/"><img src={logo} alt="logo" className="h-[80px] w-[300px]" /></NavLink>
+    <Navbar className="w-full max-w-full px-0 border-none rounded-none shadow-b-sm fixed top-0 bg-white z-10 px-8">
+      <div className="w-full max-w-[1300px] mx-auto flex items-center justify-between">
+        <NavLink to="/"><img src={logo} alt="logo" className="h-[70px]" /></NavLink>
         <div className="hidden lg:block">
           <NavList />
         </div>
         <div className="hidden gap-2 lg:flex">
-          <Button size="md" className="bg-blue-600 text-sm font-paraFont">
+          <Button size="md" className={primaryButton} onClick={() => navigate("/contact")}>
             Contact
           </Button>
         </div>

@@ -1,4 +1,6 @@
 import { Typography } from "@material-tailwind/react";
+import { locations } from "./data";
+import lightSwooshTop from "../assets/footer-top.svg";
 
 const SITEMAP = [
   {
@@ -15,6 +17,15 @@ const SITEMAP = [
       "Personal Returns",
     ],
   },
+  // {
+  //   title: "Our Locations",
+  //   links: [
+  //     "Location One",
+  //     "Location Two",
+  //     "Location Three",
+  //     "Location Four",
+  //   ],
+  // },
   //   {
   //     title: "Resources",
   //     links: ["Blog", "Newsletter", "Free Products", "Affiliate Program"],
@@ -27,17 +38,25 @@ const SITEMAP = [
 
 const currentYear = new Date().getFullYear();
 
+const handleLocationClick = (lat, lng) => {
+  window.open(
+    `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`,
+    "_blank"
+  );
+};
+
 export function FooterWithSitemap() {
   return (
-    <footer className="relative w-full bg-[#283236]">
-      <div className="w-full max-w-full px-8">
+    <>
+    <img src={lightSwooshTop} alt="Image Before" className="w-full" />
+    <footer className="relative w-full bg-black-50 px-8">
+      <div className="w-full max-w-[1300px] mx-auto">
         <div className="mx-auto grid w-full grid-cols-1 gap-8 py-12 md:grid-cols-2 lg:grid-cols-4">
           {SITEMAP.map(({ title, links }, key) => (
             <div key={key} className="w-full">
               <Typography
-                variant="small"
-                color="blue-gray"
-                className="mb-4 font-bold uppercase opacity-50 text-lg text-white"
+                variant="lead"
+                className="mb-4 uppercase opacity-50 text-lg text-white"
               >
                 {title}
               </Typography>
@@ -46,12 +65,11 @@ export function FooterWithSitemap() {
                   <Typography
                     key={key}
                     as="li"
-                    color="blue-gray"
                     className="font-normal"
                   >
                     <a
                       href="#"
-                      className="inline-block py-1 pr-2 transition-transform hover:scale-105 text-lg text-white"
+                      className="inline-block py-1 pr-2 transition-transform hover:scale-105 text-md text-white"
                     >
                       {link}
                     </a>
@@ -60,6 +78,24 @@ export function FooterWithSitemap() {
               </ul>
             </div>
           ))}
+          <div>
+            {/* <div>
+              <h3 className="text-xl font-bold mb-2">Our Locations</h3>
+              <ul className="list-none p-0">
+                {locations.map((location, index) => (
+                  <li
+                    key={index}
+                    onClick={() =>
+                      handleLocationClick(location.lat, location.lng)
+                    }
+                    className="cursor-pointer text-blue-400 hover:underline"
+                  >
+                    {location.name}
+                  </li>
+                ))}
+              </ul>
+            </div> */}
+          </div>
         </div>
         <div className="flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-4 md:flex-row md:justify-between">
           <Typography
@@ -67,7 +103,7 @@ export function FooterWithSitemap() {
             className="mb-4 text-center font-normal text-blue-gray-900 md:mb-0 text-white"
           >
             &copy; {currentYear}{" "}
-            <a href="https://material-tailwind.com/">Material Tailwind</a>. All
+            <a href="https://material-tailwind.com/">SA Accounting Solutions</a>. All
             Rights Reserved.
           </Typography>
           <div className="flex gap-3 text-blue-gray-900 sm:justify-center items-center">
@@ -153,5 +189,6 @@ export function FooterWithSitemap() {
         </div>
       </div>
     </footer>
+    </>
   );
 }
