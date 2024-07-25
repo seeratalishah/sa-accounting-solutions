@@ -54,7 +54,7 @@ const GoodFitCard = () => {
                 <Button
                   size="md"
                   className={`mt-6 ${primaryButton}`}
-                  onClick={() => navigate("/future-of-accounting")}
+                  onClick={() => navigate("/about")}
                 >
                   Find out if we’re a good fit
                 </Button>

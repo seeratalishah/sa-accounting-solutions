@@ -7,8 +7,10 @@ import {
   whiteHeadingStyles,
   whiteLongParaStyles,
 } from "../../../utilities/cssHelper";
+import { useNavigate } from "react-router-dom";
 
 const ScheduleConsult = () => {
+  const navigate = useNavigate();
   return (
     <div className="w-full flex flex-col items-center">
       {/* Image before the main content */}
@@ -33,7 +35,7 @@ const ScheduleConsult = () => {
           </div>
           <div>
             <a href="#" className="inline-block">
-              <Button size="md" className={primaryButton}>
+              <Button size="md" className={primaryButton} onClick={() => navigate("/contact")}>
                 Schedule A Consult
               </Button>
             </a>

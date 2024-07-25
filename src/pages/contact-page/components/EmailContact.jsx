@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import blueSwooshBottom from "../../../assets/blue-swoosh-bottom.svg";
 import blueSwooshTop from "../../../assets/blue-swoosh-top.svg";
 import { Button, Typography } from "@material-tailwind/react";
@@ -17,12 +17,15 @@ import {
   FaPhoneAlt,
 } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 
 const EmailContact = () => {
   const form = useRef();
+  const [isLoading, setIsLoading] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setIsLoading(true);
 
     // Ensure the form is valid before sending the email
     if (!form.current.checkValidity()) {
@@ -37,9 +40,13 @@ const EmailContact = () => {
       .then(
         () => {
           console.log("SUCCESS!");
+          toast.success("Submited Successfully");
+          setIsLoading(false)
         },
         (error) => {
           console.log("FAILED...", error.text);
+          toast.error("Failed")
+          setIsLoading(false)
         }
       );
   };
@@ -50,7 +57,7 @@ const EmailContact = () => {
       <img src={blueSwooshTop} alt="Image Before" className="w-full" />
 
       {/* Main content */}
-      <div className="bg-[#31B0D0] w-full flex items-center justify-center py-16 px-8">
+      <div className="bg-[#31B0D0] w-full flex items-center justify-center py-16 px-8" id="contact-form">
         <div className="flex flex-col items-center gap-4 w-full max-w-5xl">
           <div className="flex flex-col items-center justify-center pb-10 text-center">
             <Typography variant="h1" className={whiteHeadingStyles}>
@@ -175,7 +182,7 @@ const EmailContact = () => {
                   </label>
                 </div>
                 <Button type="submit" className={primaryButton}>
-                  Submit
+                  {isLoading ? "Please wait..." : "Submit"} 
                 </Button>
               </div>
             </form>

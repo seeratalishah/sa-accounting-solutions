@@ -7,8 +7,10 @@ import {
   primaryButton,
   secondaryButton,
 } from "../../../utilities/cssHelper";
+import { useNavigate } from "react-router-dom";
 
 const NGAccounting = () => {
+  const navigate = useNavigate();
   return (
     <div className="flex items-center gap-4 w-full flex-col sm:flex-col lg:flex-row md:flex-row">
       <div className="order-2 md:order-1 lg:order-1 md:w-[60%] lg:w-[70%] w-full sm:w-full flex flex-col gap-8 justify-center items-center lg:items-start lg:text-left text-center">
@@ -32,7 +34,7 @@ const NGAccounting = () => {
           <Button size="md" className={primaryButton}>
             What We Do
           </Button>
-          <Button size="md" className={secondaryButton}>
+          <Button size="md" className={secondaryButton} onClick={() => navigate("/about")}>
             Who We Are
           </Button>
         </div>

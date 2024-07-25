@@ -1,7 +1,7 @@
 export const longParaStyles = "text-lightText-100 text-[14px] lg:text-[18px] w-full font-paraFont";
 export const whiteLongParaStyles = "text-white text-[14px] lg:text-[18px] w-full font-paraFont";
 export const cardParaStyles = "text-lightText-100 text-[14px] lg:text-[16px] font-paraFont";
-export const cardBlueParaStyles = "text-blue-600 text-[14px] lg:text-[16px] text-center font-paraFont";
+export const cardBlueParaStyles = "text-blue-600 text-[14px] lg:text-[16px] font-paraFont";
 export const headingStyles = "text-[35px] text-black-50 leading-[1.3] font-headingFont";
 export const whiteHeadingStyles = "text-[35px] text-white leading-[1.3] font-headingFont";
 export const primaryButton = "bg-blue-600 text-sm font-paraFont capitalize hover:bg-blue-700";

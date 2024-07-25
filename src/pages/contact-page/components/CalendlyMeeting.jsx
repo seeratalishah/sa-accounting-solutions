@@ -1,78 +1,46 @@
-import { Typography } from "@material-tailwind/react";
-import React, { useEffect } from "react";
-import { cardBlueParaStyles, cardParaStyles, headingStyles } from "../../../utilities/cssHelper";
+import { Button, Typography } from "@material-tailwind/react";
+import React from "react";
+import {
+  cardBlueParaStyles,
+  cardParaStyles,
+  headingStyles,
+  primaryButton,
+} from "../../../utilities/cssHelper";
 
 const CalendlyMeeting = () => {
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://assets.calendly.com/assets/external/widget.js";
-    script.async = true;
-    document.body.appendChild(script);
-  }, []);
-
-  useEffect(() => {
-    const injectCustomStyles = () => {
-      const iframe = document.querySelector(".calendly-inline-widget iframe");
-      if (iframe) {
-        const iframeDoc =
-          iframe.contentDocument || iframe.contentWindow.document;
-        if (iframeDoc) {
-          const style = document.createElement("style");
-          style.innerHTML = `
-            .calendly-badge-widget,
-            .calendly-inline-widget .calendly-power {
-              display: none !important;
-            }
-            .calendly-inline-widget .calendly-container .calendly-container-title {
-              display: none !important;
-            }
-            .calendly-inline-widget .calendly-event-type-container {
-              display: none !important;
-            }
-              .simplebar-content{
-              display: none !important;
-              }
-              .VJL48qbQzWENTFAh1Knk e9TS9yoMqqIN2PqBo1QG _i6SG2jlTfccH2ZZblil{
-              display: none !important;
-              }
-            .Rb2e9IwsOFiKlSQIX7YA{
-              display: none important;
-              }
-            /* Add more custom styles here */
-          `;
-          iframeDoc.head.appendChild(style);
-        }
-      }
-    };
-
-    const checkIframeLoad = () => {
-      const iframe = document.querySelector(".calendly-inline-widget iframe");
-      if (iframe) {
-        iframe.onload = () => injectCustomStyles();
-      }
-    };
-
-    checkIframeLoad();
-  }, []);
-
   return (
-    <div className="w-full">
-      <div>
+    <div className="w-full flex flex-col lg:flex-row items-center gap-4 lg:gap-8">
+      <div className="w-full lg:w-1/2">
         <Typography variant="h1" className={headingStyles}>
-          Our Ethos.
+          Contact SA Accounting Solutions.
+        </Typography>
+        <Typography variant="lead" className={`mb-6 ${cardBlueParaStyles}`}>
+          Ready to take the next step towards financial success?
         </Typography>
         <Typography variant="paragraph" className={cardParaStyles}>
-          The values that drive our business, our solutions and our brand.
+          <strong>Schedule a consultation with Ledgerly today!</strong> Our
+          expert team is here to discuss your unique needs and tailor our
+          services to meet your goals. To set up your consultation, simply use
+          the calendar to schedule a time that works for you.
         </Typography>
-        <Typography variant="lead" className={`mb-10 ${cardBlueParaStyles}`}>
-          This is what makes us tick.
+        <Typography variant="paragraph" className={`my-10 ${cardParaStyles}`}>
+          We look forward to helping you achieve financial excellence.
         </Typography>
+        <div>
+          <a href="#contact-form" className="inline-block">
+            <Button size="md" className={primaryButton}>
+              Still Have Questions?
+            </Button>
+          </a>
+        </div>
       </div>
-      <div
-        className="calendly-inline-widget"
-        data-url="https://calendly.com/seeratalyshah/30-minute-meeting"
-        style={{ minWidth: "320px", height: "700px" }}
-      ></div>
+      <div className="w-full lg:w-1/2">
+        <iframe
+          src="https://calendly.com/seeratalyshah/30-minute-meeting?hide_event_type_details=1&text_color=283236&primary_color=31b0d0"
+          frameBorder="0"
+          className="calendly-inline-widget h-[500px] lg:h-[700px] w-full border border-gray-200 rounded-[32px] shadow-lg"
+        ></iframe>
+      </div>
     </div>
   );
 };

@@ -13,7 +13,7 @@ const OurEthos = () => {
       <Typography variant="paragraph" className={cardParaStyles}>
         The values that drive our business, our solutions and our brand.
       </Typography>
-      <Typography variant="lead" className={`mb-10 ${cardBlueParaStyles}`}>
+      <Typography variant="lead" className={`mb-10 text-center ${cardBlueParaStyles}`}>
         This is what makes us tick.
       </Typography>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full justify-items-center">
