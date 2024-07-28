@@ -1,11 +1,13 @@
 import React from "react";
-import Testimonial from "../../components/Testimonials";
 import HeroSection from "./components/HeroSection";
+import Testimonial from "../../components/Testimonials";
 import ScheduleConsult from "./components/ScheduleConsult";
-import WhatToExpect from "./components/WhatToExpect";
-import FAQs from "./components/FAQs";
+import WhySwitchSA from "./components/WhySwitchSA";
+import CBSection from "./components/CBSection";
+import CFOSection from "./components/CFOSection";
+import PRSection from "./components/PRSection";
 
-const OurApproachPage = () => {
+const SolutionsPage = () => {
   return (
     <>
       <section className="mt-[180px] mb-[60px] px-8">
@@ -14,13 +16,19 @@ const OurApproachPage = () => {
         </div>
       </section>
       <section className="mt-[60px]">
-          <WhatToExpect />
+        <WhySwitchSA />
       </section>
-      <section className="mb-[60px] px-8">
-        <FAQs />
+      <section className="my-[60px] px-8">
+        <CBSection />
+      </section>
+      <section className="my-[60px] px-8">
+        <CFOSection />
+      </section>
+      <section className="my-[60px] px-8">
+        <PRSection />
       </section>
       <section className="my-[60px]">
-          <ScheduleConsult />
+        <ScheduleConsult />
       </section>
       <section className="my-[60px] px-8">
         <div className="max-w-[1300px] mx-auto">
@@ -31,4 +39,4 @@ const OurApproachPage = () => {
   );
 };
 
-export default OurApproachPage;
+export default SolutionsPage;

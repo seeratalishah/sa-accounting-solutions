@@ -34,8 +34,8 @@ const EmailContact = () => {
     }
 
     emailjs
-      .sendForm("service_v4wodvk", "template_je82nye", form.current, {
-        publicKey: "Uc3iY7KD4EE5QYJb1",
+      .sendForm("service_gukczln", "template_yj40hdh", form.current, {
+        publicKey: "uQ2I6IiFN51lqLN0T",
       })
       .then(
         () => {
