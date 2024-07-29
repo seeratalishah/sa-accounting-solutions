@@ -5,13 +5,13 @@ import {
   primaryButton,
   subHeadingStyles,
 } from "../../../utilities/cssHelper";
-import { FAQsData } from "../data";
 import { Button, Typography } from "@material-tailwind/react";
-import { FaPlus } from "react-icons/fa6";
+import { Fa42Group, FaPlus } from "react-icons/fa6";
 import faqImg from "../../../assets/faq-img (2).png";
 import { useNavigate } from "react-router-dom";
+import { FAQsData } from "../../our-approach-page/data";
 
-const FAQs = () => {
+const CloudTechnology = () => {
   const [collapsedIndices, setCollapsedIndices] = useState([]);
   const navigate = useNavigate();
 
@@ -27,13 +27,39 @@ const FAQs = () => {
         {/* Left Section - Heading */}
         <div className="mb-4 md:mb-0">
           <Typography variant="h1" className={headingStyles}>
-            Cloud Accounting FAQs.
+            Benefits of Cloud Technology.
           </Typography>
-          <Typography variant="paragraph" className={longParaStyles}>
-            Cloud Accounting FAQs.
-          </Typography>
-          <img src={faqImg} alt="faq-image" />
-          <Button size="md" className={`mt-6 ${primaryButton}`} onClick={() => navigate("/contact")}>
+          <div className="flex flex-col gap-6 my-6">
+            <div className="flex justify-between items-center border border-gray-300 rounded-lg shadow-b-lg py-4 px-6">
+              <Fa42Group size={64} className="text-blue-600" />
+              <span className="text-[34px] text-black-100">title</span>
+            </div>
+            <div className="flex justify-between items-center border border-gray-200 rounded-lg shadow-sm py-4 px-6">
+              <Fa42Group size={64} className="text-blue-600" />
+              <span className="text-[34px] text-black-100">title</span>
+            </div>
+            <div className="flex justify-between items-center border border-gray-200 rounded-lg shadow-sm py-4 px-6">
+              <Fa42Group size={64} className="text-blue-600" />
+              <span className="text-[34px] text-black-100">title</span>
+            </div>
+            <div className="flex justify-between items-center border border-gray-200 rounded-lg shadow-sm py-4 px-6">
+              <Fa42Group size={64} className="text-blue-600" />
+              <span className="text-[34px] text-black-100">title</span>
+            </div>
+            <div className="flex justify-between items-center border border-gray-200 rounded-lg shadow-sm py-4 px-6">
+              <Fa42Group size={64} className="text-blue-600" />
+              <span className="text-[34px] text-black-100">title</span>
+            </div>
+            <div className="flex justify-between items-center border border-gray-200 rounded-lg shadow-sm py-4 px-6">
+              <Fa42Group size={64} className="text-blue-600" />
+              <span className="text-[34px] text-black-100">title</span>
+            </div>
+          </div>
+          <Button
+            size="md"
+            className={`mt-6 ${primaryButton}`}
+            onClick={() => navigate("/contact")}
+          >
             Still have questions? Contact us!
           </Button>
         </div>
@@ -81,4 +107,4 @@ const FAQs = () => {
   );
 };
 
-export default FAQs;
+export default CloudTechnology;

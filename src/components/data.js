@@ -25,3 +25,4 @@ export const locations = [
   { lat: -3.746, lng: -38.524, name: "Location 4" },
   // Add more locations as needed
 ];
+

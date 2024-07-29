@@ -8,7 +8,7 @@ import {
   primaryButton,
 } from "../../../utilities/cssHelper";
 
-const CFOSection = () => {
+const CRSection = () => {
   const navigate = useNavigate();
   return (
     <div className="flex flex-col lg:flex-row md:flex-row items-center gap-4 w-full">
@@ -22,17 +22,17 @@ const CFOSection = () => {
       <div className="w-full lg:w-[70%] md:w-[60%] flex flex-col gap-8 items-center lg:items-end md:items-end text-center lg:text-left md:text-left">
         <div className="flex flex-col gap-4 items-center lg:items-start text-center lg:text-left md:text-left">
           <Typography variant="h1" className={headingStyles}>
-            CFO Services.
+            Corporate Returns.
           </Typography>
           <Typography
             variant="paragraph"
             className={`max-w-[750px] md:pr-[30px] lg:pr-[30px] ${longParaStyles}`}
           >
-            Need help putting a budget or forecast together? Looking to
-            grow/expand but don’t know how? Having trouble getting a bank loan?
-            That’s where we step in. CFO’s have years of experience and can
-            provide significant value to your organization. We can provide the
-            same services without all that added payroll.
+            Dreading tax season? You shouldn’t, we are your full-service
+            accounting solution. We’ll look after your books throughout the year
+            and file your return for you. Gone are the days of dragging all
+            those boxes to your accountant and all that back and forth. We make
+            tax time painless.
           </Typography>
         </div>
         <div className="flex w-full justify-center lg:justify-start md:justify-start">
@@ -49,4 +49,4 @@ const CFOSection = () => {
   );
 };
 
-export default CFOSection;
+export default CRSection;

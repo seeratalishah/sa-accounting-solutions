@@ -3,6 +3,7 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import { NavbarWithMegaMenu } from "../components/Header";
 import { FooterWithSitemap } from "../components/Footer";
+import GoogleMapsLocation from "../components/GoogleMapsLocation";
 
 const Layout = () => {
   return (
@@ -13,6 +14,9 @@ const Layout = () => {
       <main>
         <Outlet />
       </main>
+      <div className="w-full max-w-[1300px] mx-auto px-8 mb-[60px]">
+        <GoogleMapsLocation />
+      </div>
       <FooterWithSitemap />
     </div>
   );
