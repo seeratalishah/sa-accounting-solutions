@@ -1,0 +1,34 @@
+import React from "react";
+import { IconCard } from "../../../components/IconCard";
+import { Typography } from "@material-tailwind/react";
+import {
+  cardBlueParaStyles,
+  cardParaStyles,
+  headingStyles,
+} from "../../../utilities/cssHelper";
+import { ourEthosData } from "../../about-page/data";
+
+const PTSQuestion = () => {
+  return (
+    <div className="flex flex-col items-center">
+      <Typography variant="h1" className={headingStyles}>
+        Our Ethos.
+      </Typography>
+      <Typography variant="paragraph" className={cardParaStyles}>
+        Let’s take a look at who benefits from Ledgerly’s services.
+      </Typography>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full justify-items-center mt-10">
+        {ourEthosData.map((item, index) => {
+          const IconComponent = item.icon;
+          return (
+            <div key={index} className="flex justify-center items-center">
+              <IconCard item={item} IconComponent={IconComponent} />
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+
+export default PTSQuestion;
