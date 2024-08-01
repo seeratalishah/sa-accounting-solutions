@@ -8,19 +8,16 @@ import {
 } from "../../../utilities/cssHelper";
 
 import accountingDiffWay from "../../../assets/about-img.png";
+import { corporateReturnsSvg } from "../../../utilities/svgs";
 
 const CRSection = () => {
   const navigate = useNavigate();
   return (
     <div className="flex flex-col lg:flex-row md:flex-row items-center gap-4 w-full">
-      <div className="w-full lg:w-[30%] md:w-[40%] flex justify-center lg:justify-start md:justify-start items-center">
-        <img
-          src={accountingDiffWay}
-          alt="new-accounting-image"
-          className="h-[400px]"
-        />
+      <div className="w-full md:w-[50%] flex justify-center lg:justify-start md:justify-start items-center">
+      <div dangerouslySetInnerHTML={{ __html: corporateReturnsSvg }}></div>
       </div>
-      <div className="w-full lg:w-[70%] md:w-[60%] flex flex-col gap-8 items-center lg:items-end md:items-end text-center lg:text-left md:text-left">
+      <div className="w-full md:w-[50%] flex flex-col gap-8 items-center lg:items-end md:items-end text-center lg:text-left md:text-left">
         <div className="flex flex-col gap-4 items-center lg:items-start text-center lg:text-left md:text-left">
           <Typography variant="h1" className={headingStyles}>
             Corporate Returns.

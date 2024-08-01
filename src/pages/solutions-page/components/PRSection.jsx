@@ -8,12 +8,13 @@ import {
 } from "../../../utilities/cssHelper";
 
 import accountingDiffWay from "../../../assets/about-img.png";
+import { personalReturnSvg } from "../../../utilities/svgs";
 
 const PRSection = () => {
   const navigate = useNavigate();
   return (
     <div className="flex items-center gap-4 w-full flex-col lg:flex-row md:flex-row">
-      <div className="order-2 md:order-1 lg:order-1 md:w-[60%] lg:w-[70%] w-full sm:w-full flex flex-col gap-8 justify-center items-center lg:items-start lg:text-left text-center">
+      <div className="order-2 md:order-1 lg:order-1 md:w-[50%] w-full sm:w-full flex flex-col gap-8 justify-center items-center lg:items-start lg:text-left text-center">
         <div className="flex flex-col gap-4 items-center lg:items-start text-center lg:text-left md:text-left">
           <Typography variant="h1" className={headingStyles}>
             Personal Returns.
@@ -39,12 +40,8 @@ const PRSection = () => {
           </Button>
         </div>
       </div>
-      <div className="order-1 md:order-2 lg:order-2 md:w-[40%] lg:w-[30%] w-full sm:w-full flex justify-center md:justify-end lg:justify-end items-center">
-        <img
-          src={accountingDiffWay}
-          alt="new-accounting-image"
-          className="h-[400px]"
-        />
+      <div className="order-1 md:order-2 lg:order-2 md:w-[50%] w-full sm:w-full flex justify-center md:justify-end lg:justify-end items-center">
+      <div dangerouslySetInnerHTML={{ __html: personalReturnSvg }}></div>
       </div>
     </div>
   );

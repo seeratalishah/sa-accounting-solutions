@@ -17,46 +17,45 @@ import {
   Bars3Icon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
-import {
-  Bars4Icon,
-  GlobeAmericasIcon,
-  SquaresPlusIcon,
-  SunIcon,
-  UserGroupIcon,
-} from "@heroicons/react/24/solid";
-import logo from "../assets/saaa.png";
+import logo from "../assets/logo.png";
 import { NavLink, useNavigate } from "react-router-dom";
 import { primaryButton } from "../utilities/cssHelper";
+
+import cb from "../assets/images/icons/cb.png";
+import prr from "../assets/images/icons/prr.png";
+import pr from "../assets/images/icons/pr.png";
+import cr from "../assets/images/icons/cr.png";
+import cfo from "../assets/images/icons/cfo.png";
 
 const navListMenuItems = [
   {
     title: "Cloud Bookkeeping",
     description: "Find the perfect solution for your needs.",
-    icon: SquaresPlusIcon,
+    icon: cb,
     link: "/cloud-bookkeeping",
   },
   {
     title: "Payroll Services",
     description: "Meet and learn about our dedication",
-    icon: UserGroupIcon,
+    icon: prr,
     link: "/payroll-services",
   },
   {
     title: "Corporate Returns",
     description: "Find the perfect solution for your needs.",
-    icon: Bars4Icon,
+    icon: cr,
     link: "/corporate-returns",
   },
   {
     title: "CFO Services",
     description: "Learn how we can help you achieve your goals.",
-    icon: SunIcon,
+    icon: cfo,
     link: "/CFO-services",
   },
   {
     title: "Personal Returns",
     description: "Reach out to us for assistance or inquiries",
-    icon: GlobeAmericasIcon,
+    icon: pr,
     link: "/personal-returns",
   },
 ];
@@ -66,6 +65,7 @@ function NavListMenu({ setActiveItem }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
   const menuRef = useRef(null);
   const navigate = useNavigate();
+  const path = window.location.pathname;
 
   const handleClickOutside = (event) => {
     if (menuRef.current && !menuRef.current.contains(event.target)) {
@@ -89,12 +89,9 @@ function NavListMenu({ setActiveItem }) {
   const renderItems = navListMenuItems.map(
     ({ icon, title, description, link }, key) => (
       <NavLink to={link} key={key}>
-        <MenuItem className="flex items-center gap-3 rounded-lg">
+        <MenuItem className={`${path === link && "bg-[#eceff1cc]"} flex items-center gap-3 rounded-lg`}>
           <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2 ">
-            {React.createElement(icon, {
-              strokeWidth: 2,
-              className: "h-6 text-gray-900 w-6",
-            })}
+            <img src={icon} alt="icon" className="w-[24px] h-[24px]" />
           </div>
           <div>
             <Typography
@@ -133,7 +130,9 @@ function NavListMenu({ setActiveItem }) {
             ref={menuRef}
           >
             <ListItem
-              className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900 text-xl"
+              className={`${
+                path === "/solutions" && `text-blue-600`
+              } flex items-center gap-2 py-2 pr-4 font-medium text-xl`}
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={handleMenuClick}
               onMouseEnter={() => setIsMenuOpen(true)}
@@ -232,7 +231,7 @@ export function NavbarWithMegaMenu() {
   }, []);
 
   return (
-    <Navbar className="w-full max-w-full px-0 border-none rounded-none shadow-b-sm fixed top-0 bg-white z-10 px-8">
+    <Navbar className="w-full max-w-full px-0 border-none rounded-none shadow-none fixed top-0 bg-white z-10 px-8">
       <div className="w-full max-w-[1300px] mx-auto flex items-center justify-between">
         <NavLink to="/">
           <img src={logo} alt="logo" className="h-[80px]" />

@@ -1,26 +1,36 @@
 import owe from "../../assets/images/icons/owe.png";
 import taxLev from "../../assets/images/icons/tax-lev.png";
 import filling from "../../assets/images/icons/filling.png";
+import {
+  cfoSvgCard,
+  cloudBKSvgCard,
+  payrollSvgCard,
+  personalReturnSvgCard,
+} from "../../utilities/svgs";
 
 export const servicesData = [
   {
     id: "1",
     title: "Payroll Services",
+    svg: payrollSvgCard,
     link: "payroll-services",
   },
   {
     id: "2",
     title: "Cloud Bookkeeping",
+    svg: cloudBKSvgCard,
     link: "cloud-bookkeeping",
   },
   {
     id: "3",
     title: "CFO Services",
+    svg: cfoSvgCard,
     link: "CFO-services",
   },
   {
     id: "4",
     title: "Personal Returns",
+    svg: personalReturnSvgCard,
     link: "personal-returns",
   },
 ];
@@ -52,7 +62,8 @@ export const payrollData = [
   },
   {
     id: 7,
-    title: "Convenient management of pension deductions, insurance payments, and other benefits",
+    title:
+      "Convenient management of pension deductions, insurance payments, and other benefits",
   },
   {
     id: 8,
@@ -60,7 +71,8 @@ export const payrollData = [
   },
   {
     id: 9,
-    title: "Simple tracking of vacation time, sick days, and any rollovers from year to year",
+    title:
+      "Simple tracking of vacation time, sick days, and any rollovers from year to year",
   },
 ];
 
@@ -84,5 +96,3 @@ export const corTaxSerData = [
     desc: "We get everything you need, prepare your year-end financial statements and file your return. One package, done right.",
   },
 ];
-
-

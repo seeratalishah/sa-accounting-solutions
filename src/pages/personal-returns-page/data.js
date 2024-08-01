@@ -5,26 +5,31 @@ import user from "../../assets/images/icons/user.png";
 import money from "../../assets/images/icons/money.png";
 import ecommerce from "../../assets/images/icons/ecommerce.png";
 import earning from "../../assets/images/icons/earning.png";
+import { cfoSvgCard, cloudBKSvgCard, corporateReturnsSvgCard, payrollSvgCard } from "../../utilities/svgs";
 
 export const servicesData = [
   {
     id: "1",
     title: "Payroll Services",
+    svg: payrollSvgCard,
     link: "payroll-services",
   },
   {
     id: "2",
     title: "Cloud Bookkeeping",
+    svg: cloudBKSvgCard,
     link: "cloud-bookkeeping",
   },
   {
     id: "3",
     title: "Corporate Returns",
+    svg: corporateReturnsSvgCard,
     link: "corporate-returns",
   },
   {
     id: "4",
     title: "CFO Services",
+    svg: cfoSvgCard,
     link: "CFO-services",
   },
 ];

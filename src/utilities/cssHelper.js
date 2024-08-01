@@ -7,13 +7,15 @@ export const cardParaStyles =
 export const cardBlueParaStyles =
   "text-blue-600 text-[14px] lg:text-[16px] font-paraFont";
 export const headingStyles =
-  "text-[35px] text-black-50 leading-[1.3] font-headingFont";
+  "text-[35px] text-black-50 leading-[1.3] font-headingFont font-bold";
 export const whiteHeadingStyles =
   "text-[35px] text-white leading-[1.3] font-headingFont";
+export const subBlueHeadingStyles =
+  "text-[18px] text-blue-600 leading-[1.3] font-headingFont font-bold";
 export const primaryButton =
-  "bg-blue-600 text-sm font-paraFont capitalize hover:bg-blue-700";
+  "bg-blue-600 text-sm font-paraFont capitalize hover:bg-blue-700 rounded-full";
 export const secondaryButton =
-  "bg-white border border-blue-600 text-blue-600 text-sm font-paraFont capitalize hover:bg-blue-700 hover:text-white";
+  "bg-white border border-blue-600 text-blue-600 text-sm font-paraFont capitalize hover:bg-blue-700 hover:text-white rounded-full";
 export const serviceCardTitle =
   "text-center font-headingFont text-[28px] font-bold text-black-100 leading-[1.1]";
 export const cardTitle =

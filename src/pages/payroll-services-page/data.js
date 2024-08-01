@@ -5,25 +5,31 @@ import simple from "../../assets/images/icons/simple.png";
 import collaborate from "../../assets/images/icons/collaboration.png";
 import report from "../../assets/images/icons/report.png";
 
+import { cfoSvgCard, cloudBKSvgCard, corporateReturnsSvgCard, personalReturnSvgCard } from "../../utilities/svgs";
+
 export const servicesData = [
   {
     id: "1",
     title: "Corporate Returns",
+    svg: corporateReturnsSvgCard,
     link: "corporate-returns",
   },
   {
     id: "2",
     title: "Cloud Bookkeeping",
+    svg: cloudBKSvgCard,
     link: "cloud-bookkeeping",
   },
   {
     id: "3",
     title: "CFO Services",
+    svg: cfoSvgCard,
     link: "CFO-services",
   },
   {
     id: "4",
     title: "Personal Returns",
+    svg: personalReturnSvgCard,
     link: "personal-returns",
   },
 ];

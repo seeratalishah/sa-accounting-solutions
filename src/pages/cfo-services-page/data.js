@@ -9,26 +9,32 @@ import cost from "../../assets/images/icons/cost.png";
 import skillset from "../../assets/images/icons/decision.png";
 import productivity from "../../assets/images/icons/productivity.png";
 
+import { cloudBKSvgCard, corporateReturnsSvgCard, payrollSvgCard, personalReturnSvgCard } from "../../utilities/svgs";
+
 export const servicesData = [
   {
     id: "1",
     title: "Payroll Services",
     link: "payroll-services",
+    svg: payrollSvgCard,
   },
   {
     id: "2",
     title: "Cloud Bookkeeping",
     link: "cloud-bookkeeping",
+    svg: cloudBKSvgCard,
   },
   {
     id: "3",
     title: "Corporate Returns",
     link: "corporate-returns",
+    svg: corporateReturnsSvgCard,
   },
   {
     id: "4",
     title: "Personal Returns",
     link: "personal-returns",
+    svg: personalReturnSvgCard,
   },
 ];
 
