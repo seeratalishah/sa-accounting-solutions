@@ -1,5 +1,4 @@
 import React from "react";
-import ourApproach from "../../../assets/our-approach.png";
 import { Button, Typography } from "@material-tailwind/react";
 import { useNavigate } from "react-router-dom";
 import {
@@ -8,6 +7,8 @@ import {
   longParaStyles,
   primaryButton,
 } from "../../../utilities/cssHelper";
+
+import ourApproach from "../../../assets/our-approach.png";
 
 const HeroSection = () => {
   const navigate = useNavigate();
@@ -33,8 +34,12 @@ const HeroSection = () => {
           </Typography>
         </div>
         <div className="flex gap-2 w-full justify-center sm:justify-center md:justify-start lg:justify-start">
-          <Button size="md" className={primaryButton}>
-            Get Stared Now
+          <Button
+            size="md"
+            className={primaryButton}
+            onClick={() => navigate("/contact")}
+          >
+            <span className="text-[16px]"> Get Stared Now</span>
           </Button>
         </div>
       </div>

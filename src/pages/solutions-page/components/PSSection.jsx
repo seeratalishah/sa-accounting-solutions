@@ -1,5 +1,4 @@
 import React from "react";
-import accountingDiffWay from "../../../assets/about-img.png";
 import { Button, Typography } from "@material-tailwind/react";
 import { useNavigate } from "react-router-dom";
 import {
@@ -8,6 +7,8 @@ import {
   primaryButton,
 } from "../../../utilities/cssHelper";
 
+import accountingDiffWay from "../../../assets/about-img.png";
+
 const PSSection = () => {
   const navigate = useNavigate();
   return (
@@ -15,19 +16,25 @@ const PSSection = () => {
       <div className="order-2 md:order-1 lg:order-1 md:w-[60%] lg:w-[70%] w-full sm:w-full flex flex-col gap-8 justify-center items-center lg:items-start lg:text-left text-center">
         <div className="flex flex-col gap-4 items-center lg:items-start text-center lg:text-left md:text-left">
           <Typography variant="h1" className={headingStyles}>
-          Payroll Services.
+            Payroll Services.
           </Typography>
-          <Typography variant="paragraph" className={`max-w-[750px] md:pr-[30px] lg:pr-[30px] ${longParaStyles}`}>
-          No more rushing to the office at 11pm on a Thursday to enter that last minute timesheet. We will automate your data capture so you can run your payroll from anywhere. We’ll even look after all your reporting, so CRA stays happy.
+          <Typography
+            variant="paragraph"
+            className={`max-w-[750px] md:pr-[30px] lg:pr-[30px] ${longParaStyles}`}
+          >
+            No more rushing to the office at 11pm on a Thursday to enter that
+            last minute timesheet. We will automate your data capture so you can
+            run your payroll from anywhere. We’ll even look after all your
+            reporting, so CRA stays happy.
           </Typography>
         </div>
         <div className="flex w-full justify-center sm:justify-center md:justify-start lg:justify-start">
           <Button
             size="md"
             className={primaryButton}
-            onClick={() => navigate("/our-approach")}
+            onClick={() => navigate("/payroll-services")}
           >
-            Learn More
+            <span className="text-[16px]">Learn More</span>
           </Button>
         </div>
       </div>

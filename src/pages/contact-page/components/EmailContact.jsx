@@ -1,6 +1,4 @@
 import React, { useRef, useState } from "react";
-import blueSwooshBottom from "../../../assets/blue-swoosh-bottom.svg";
-import blueSwooshTop from "../../../assets/blue-swoosh-top.svg";
 import { Button, Typography } from "@material-tailwind/react";
 import {
   primaryButton,
@@ -16,6 +14,10 @@ import {
   FaComments,
   FaPhoneAlt,
 } from "react-icons/fa";
+import { BsFillSendFill } from "react-icons/bs";
+
+import blueSwooshBottom from "../../../assets/blue-swoosh-bottom.svg";
+import blueSwooshTop from "../../../assets/blue-swoosh-top.svg";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
 
@@ -41,12 +43,12 @@ const EmailContact = () => {
         () => {
           console.log("SUCCESS!");
           toast.success("Submited Successfully");
-          setIsLoading(false)
+          setIsLoading(false);
         },
         (error) => {
           console.log("FAILED...", error.text);
-          toast.error("Failed")
-          setIsLoading(false)
+          toast.error("Failed");
+          setIsLoading(false);
         }
       );
   };
@@ -57,7 +59,10 @@ const EmailContact = () => {
       <img src={blueSwooshTop} alt="Image Before" className="w-full" />
 
       {/* Main content */}
-      <div className="bg-[#31B0D0] w-full flex items-center justify-center py-16 px-8" id="contact-form">
+      <div
+        className="bg-[#31B0D0] w-full flex items-center justify-center py-16 px-8"
+        id="contact-form"
+      >
         <div className="flex flex-col items-center gap-4 w-full max-w-5xl">
           <div className="flex flex-col items-center justify-center pb-10 text-center">
             <Typography variant="h1" className={whiteHeadingStyles}>
@@ -164,9 +169,14 @@ const EmailContact = () => {
                   className="flex-grow p-2 rounded border border-gray-300 h-24"
                 />
               </div>
-              <div className="flex flex-col md:flex-row w-full justify-between gap-4">
-                <div className="flex items-center w-full md:w-auto">
-                  <input type="checkbox" name="agree" required className="mr-2" />
+              <div className="flex justify-end w-full">
+                {/* <div className="flex items-center w-full md:w-auto">
+                  <input
+                    type="checkbox"
+                    name="agree"
+                    required
+                    className="mr-2"
+                  />
                   <label
                     htmlFor="agree"
                     className="text-blue-600 text-sm leading-[0.5] md:text-md"
@@ -180,9 +190,10 @@ const EmailContact = () => {
                     </a>
                     .
                   </label>
-                </div>
-                <Button type="submit" className={primaryButton}>
-                  {isLoading ? "Please wait..." : "Submit"} 
+                </div> */}
+                <Button type="submit" className={`flex items-center gap-2 ${primaryButton}`}>
+                  <BsFillSendFill size={20} />
+                  <span className="text-[16px]">{isLoading ? "Please wait..." : "Submit"}</span>
                 </Button>
               </div>
             </form>

@@ -1,5 +1,5 @@
-import { Button, Typography } from "@material-tailwind/react";
 import React from "react";
+import { Button, Typography } from "@material-tailwind/react";
 import { useNavigate } from "react-router-dom";
 import {
   whiteLongParaStyles,
@@ -56,7 +56,9 @@ const GoodFitCard = () => {
                   className={`mt-6 ${primaryButton}`}
                   onClick={() => navigate("/about")}
                 >
-                  Find out if we’re a good fit
+                  <span className="text-[16px]">
+                    Find out if we’re a good fit
+                  </span>
                 </Button>
               </a>
             </div>

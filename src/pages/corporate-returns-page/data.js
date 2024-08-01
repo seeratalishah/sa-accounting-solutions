@@ -1,19 +1,27 @@
+import owe from "../../assets/images/icons/owe.png";
+import taxLev from "../../assets/images/icons/tax-lev.png";
+import filling from "../../assets/images/icons/filling.png";
+
 export const servicesData = [
   {
     id: "1",
-    title: "Corporate Returns",
+    title: "Payroll Services",
+    link: "payroll-services",
   },
   {
     id: "2",
-    title: "Payroll Services",
+    title: "Cloud Bookkeeping",
+    link: "cloud-bookkeeping",
   },
   {
     id: "3",
     title: "CFO Services",
+    link: "CFO-services",
   },
   {
     id: "4",
     title: "Personal Returns",
+    link: "personal-returns",
   },
 ];
 
@@ -55,3 +63,26 @@ export const payrollData = [
     title: "Simple tracking of vacation time, sick days, and any rollovers from year to year",
   },
 ];
+
+export const corTaxSerData = [
+  {
+    id: 1,
+    icon: owe,
+    title: "Know What You Owe",
+    desc: "Don’t make spending decisions based on what you think you owe. With Ledgerly, you will have a plan so you know what you will owe.",
+  },
+  {
+    id: 2,
+    icon: taxLev,
+    title: "Leverage Every Tax Advantage",
+    desc: "From a sole proprietorship to a corporation, there are many different ways to structure your company. Our Tax Professionals help you build a structure that works for you.",
+  },
+  {
+    id: 3,
+    icon: filling,
+    title: "Painless Filing",
+    desc: "We get everything you need, prepare your year-end financial statements and file your return. One package, done right.",
+  },
+];
+
+

@@ -1,16 +1,15 @@
-import { Button, Typography } from "@material-tailwind/react";
 import React from "react";
+import { Typography } from "@material-tailwind/react";
 import { useNavigate } from "react-router-dom";
 import {
   whiteLongParaStyles,
-  primaryButton,
   whiteHeadingStyles,
 } from "../../../utilities/cssHelper";
+import { FaCheckCircle } from "react-icons/fa";
+import { payrollData } from "../data";
 
 import blueSwooshBottom from "../../../assets/blue-swoosh-bottom.svg";
 import blueSwooshTop from "../../../assets/blue-swoosh-top.svg";
-import { FaCheckCircle } from "react-icons/fa";
-import { payrollData } from "../data";
 
 const BetterPayroll = () => {
   const navigate = useNavigate();
@@ -42,7 +41,10 @@ const BetterPayroll = () => {
             {payrollData.map((item, index) => {
               return (
                 <div className="flex items-start gap-3" key={index}>
-                  <FaCheckCircle size={24} className="text-blue-600 flex-shrink-0 mt-1" />
+                  <FaCheckCircle
+                    size={24}
+                    className="text-blue-600 flex-shrink-0 mt-1"
+                  />
                   <span className="text-lg">{item.title}</span>
                 </div>
               );

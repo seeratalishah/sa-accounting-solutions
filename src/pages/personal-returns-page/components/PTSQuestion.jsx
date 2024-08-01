@@ -2,11 +2,10 @@ import React from "react";
 import { IconCard } from "../../../components/IconCard";
 import { Typography } from "@material-tailwind/react";
 import {
-  cardBlueParaStyles,
   cardParaStyles,
   headingStyles,
 } from "../../../utilities/cssHelper";
-import { ourEthosData } from "../../about-page/data";
+import { PTSQuestData } from "../data";
 
 const PTSQuestion = () => {
   return (
@@ -17,8 +16,8 @@ const PTSQuestion = () => {
       <Typography variant="paragraph" className={cardParaStyles}>
         Let’s take a look at who benefits from Ledgerly’s services.
       </Typography>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full justify-items-center mt-10">
-        {ourEthosData.map((item, index) => {
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full justify-items-center mt-10">
+        {PTSQuestData.map((item, index) => {
           const IconComponent = item.icon;
           return (
             <div key={index} className="flex justify-center items-center">

@@ -1,15 +1,11 @@
 import React from "react";
 import { IconCard } from "../../../components/IconCard";
 import { Typography } from "@material-tailwind/react";
-import {
-  cardBlueParaStyles,
-  cardParaStyles,
-  headingStyles,
-  longParaStyles,
-} from "../../../utilities/cssHelper";
-import { ourEthosData } from "../../about-page/data";
+import { headingStyles } from "../../../utilities/cssHelper";
+
 import lightSwooshBottom from "../../../assets/light-swoosh-bottom.svg";
 import lightSwooshTop from "../../../assets/light-swoosh-top.svg";
+import { whyPTSData } from "../data";
 
 const WhyPTS = () => {
   return (
@@ -24,7 +20,7 @@ const WhyPTS = () => {
             Why Choose Our Personal Tax Services?
           </Typography>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full justify-items-center mt-10">
-            {ourEthosData.map((item, index) => {
+            {whyPTSData.map((item, index) => {
               const IconComponent = item.icon;
               return (
                 <div key={index} className="flex justify-center items-center">

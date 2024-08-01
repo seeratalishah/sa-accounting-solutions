@@ -1,4 +1,4 @@
-import { Button, Typography } from "@material-tailwind/react";
+import { Typography } from "@material-tailwind/react";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import {
@@ -6,10 +6,10 @@ import {
   whiteHeadingStyles,
   whiteSubHeadingStyles,
 } from "../../../utilities/cssHelper";
+import { whatWeExpectData } from "../data";
 
 import blueSwooshBottom from "../../../assets/blue-swoosh-bottom.svg";
 import blueSwooshTop from "../../../assets/blue-swoosh-top.svg";
-import { whatWeExpectData } from "../data";
 
 const WhatToExpect = () => {
   const navigate = useNavigate();
@@ -36,7 +36,7 @@ const WhatToExpect = () => {
               return (
                 <div className="flex flex-col pb-4 md:ml-4 lg:ml-4 border-b border-gray-700">
                   <div className="flex items-start md:items-center lg:items-center gap-4 mb-3">
-                    <IconComponent size={24} className="text-blue-600" />
+                    <IconComponent size={32} className="text-blue-600" />
                     <Typography variant="h2" className={whiteSubHeadingStyles}>
                       {item.title}
                     </Typography>

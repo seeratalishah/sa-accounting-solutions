@@ -1,32 +1,37 @@
 import { IoReceipt } from "react-icons/io5";
+import { PiUsersFill } from "react-icons/pi";
+import { HiShieldCheck } from "react-icons/hi";
+import { GiFreedomDove } from "react-icons/gi";
+import { GrSettingsOption } from "react-icons/gr";
+import { PiEmptyBold } from "react-icons/pi";
 export const whatWeExpectData = [
   {
     id: 1,
-    icon: IoReceipt,
+    icon: PiUsersFill,
     title: "You will meet the team",
     desc: "Relationships matter, you will meet a great team of people that will support you and your business.",
   },
   {
     id: 2,
-    icon: IoReceipt,
+    icon: HiShieldCheck,
     title: "You will see how easy it can be",
     desc: "We do all of the setup and help you automate your process.",
   },
   {
     id: 3,
-    icon: IoReceipt,
+    icon: GiFreedomDove,
     title: "You will feel the freedom",
     desc: "All those manual processes, gone! We’ll help you eliminate all those mundane tasks and get you focused on what matters.",
   },
   {
     id: 4,
-    icon: IoReceipt,
+    icon: GrSettingsOption,
     title: "You will see things happen",
     desc: "We’ll get you your time back by automating your repetitive tasks.",
   },
   {
     id: 5,
-    icon: IoReceipt,
+    icon: PiEmptyBold,
     title: "You will have empty pockets",
     desc: "No more receipts! Welcome to the paperless revolution.",
   },

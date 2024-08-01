@@ -5,10 +5,17 @@ import {
   Typography,
   Button,
 } from "@material-tailwind/react";
+import {
+  primaryButton,
+  whiteHeadingStyles,
+  whiteLongParaStyles,
+} from "../../../utilities/cssHelper";
+
 import bibdImage from "../../../assets/sa-img.png";
-import { primaryButton, whiteHeadingStyles, whiteLongParaStyles } from "../../../utilities/cssHelper";
+import { useNavigate } from "react-router-dom";
 
 export function BIBDCard() {
+  const navigate = useNavigate();
   return (
     <Card
       shadow={false}
@@ -21,10 +28,10 @@ export function BIBDCard() {
         className="absolute inset-0 m-0 h-full w-full rounded-none"
         style={{
           backgroundImage: `url(${bibdImage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-          filter: 'blur(8px)', // Apply blur effect
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          filter: "blur(8px)", // Apply blur effect
         }}
       >
         <div className="to-bg-black-90 absolute inset-0 h-full w-full bg-gradient-to-t from-black-100/100 via-black-100/50" />
@@ -37,11 +44,18 @@ export function BIBDCard() {
         >
           Better Information. Better Decisions.
         </Typography>
-        <Typography variant="paragraph" className={`text-center mb-5 ${whiteLongParaStyles}`}>
+        <Typography
+          variant="paragraph"
+          className={`text-center mb-5 ${whiteLongParaStyles}`}
+        >
           Actionable insights delivered how and when you need them.
         </Typography>
-        <Button size="md" className={primaryButton}>
-          Find Out What We Do
+        <Button
+          size="md"
+          className={primaryButton}
+          onClick={() => navigate("/solutions")}
+        >
+          <span className="text-[16px]">Find Out What We Do</span>
         </Button>
       </CardBody>
     </Card>

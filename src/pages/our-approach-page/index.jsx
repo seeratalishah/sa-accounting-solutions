@@ -14,13 +14,13 @@ const OurApproachPage = () => {
         </div>
       </section>
       <section className="mt-[60px]">
-          <WhatToExpect />
+        <WhatToExpect />
       </section>
       <section className="mb-[60px] px-8">
         <FAQs />
       </section>
       <section className="my-[60px]">
-          <ScheduleConsult />
+        <ScheduleConsult />
       </section>
       <section className="my-[60px] px-8">
         <div className="max-w-[1300px] mx-auto">

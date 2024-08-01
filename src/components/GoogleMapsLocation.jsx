@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { FaLocationDot, FaPhone } from "react-icons/fa6";
+import { IoIosMail, IoMdMail } from "react-icons/io";
 
-const phoneNumber = "1234577";
+const phoneNumber = "(416) 824-6950";
+const email = "info@saaccountingsolutions";
 
 const locations = [
   {
@@ -37,6 +39,13 @@ const GoogleMapsLocation = () => {
           <div className="flex gap-2 items-start">
             <FaPhone size={20} className="mt-1 text-blue-600" />
             <span >{phoneNumber}</span>
+          </div>
+        </div>
+        <div className="flex flex-col gap-1">
+          <span className="font-semibold">Email</span>
+          <div className="flex gap-2 items-start">
+            <IoMdMail   size={22} className="mt-1 text-blue-600" />
+            <span >{email}</span>
           </div>
         </div>
         <div className="flex flex-col gap-2">

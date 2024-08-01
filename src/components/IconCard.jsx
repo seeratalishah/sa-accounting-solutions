@@ -5,11 +5,11 @@ import {
 } from "@material-tailwind/react";
 import { cardParaStyles, cardTitle } from "../utilities/cssHelper";
 
-export function IconCard({ item, IconComponent, iconColor }) {
+export function IconCard({ item }) {
   return (
     <Card className="w-full border border-grey-50 flex flex-col items-center justify-center transform transition-transform duration-300 hover:scale-105 md:min-h-[402px] lg:min-h-[461px]">
       <CardBody className="flex flex-col items-center">
-        <IconComponent size={44} className={`mb-6 text-blue-600`} />
+        <img src={item.icon} alt="icon" className="mb-6" />
         <Typography variant="lead" className={`mb-3 ${cardTitle}`}>
           {item.title}
         </Typography>

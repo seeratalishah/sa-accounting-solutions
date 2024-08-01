@@ -1,11 +1,9 @@
 import React from "react";
 import ScheduleConsult from "../solutions-page/components/ScheduleConsult";
 import Testimonial from "../../components/Testimonials";
-import CFOBenefits from "./components/PTSQuestion";
 import HeroSection from "./components/HeroSection";
 import RulesChanging from "./components/RulesChanging";
 import ServicesMap from "./components/ServicesMap";
-import CorporateTaxServicesPage from "./components/WhyPTS";
 import WhyPTS from "./components/WhyPTS";
 import PTSQuestion from "./components/PTSQuestion";
 

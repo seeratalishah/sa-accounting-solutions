@@ -15,21 +15,20 @@ import PersonalReturnsPage from "./pages/personal-returns-page";
 
 const App = () => {
   return (
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/our-approach" element={<OurApproachPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="/solutions" element={<SolutionsPage />} />
-          <Route path="/cloud-bookkeeping" element={<CloudBKPage />} />
-          <Route path="/payroll-services" element={<PayrollServicesPage />} />
-          <Route path="/CFO-services" element={<CFOServicesPage />} />
-          <Route path="/corporate-returns" element={<CorporateReturnsPage />} />
-          <Route path="/personal-returns" element={<PersonalReturnsPage />} />
-          {/* Add more routes as needed */}
-        </Route>
-      </Routes>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/our-approach" element={<OurApproachPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/solutions" element={<SolutionsPage />} />
+        <Route path="/cloud-bookkeeping" element={<CloudBKPage />} />
+        <Route path="/payroll-services" element={<PayrollServicesPage />} />
+        <Route path="/CFO-services" element={<CFOServicesPage />} />
+        <Route path="/corporate-returns" element={<CorporateReturnsPage />} />
+        <Route path="/personal-returns" element={<PersonalReturnsPage />} />
+      </Route>
+    </Routes>
   );
 };
 

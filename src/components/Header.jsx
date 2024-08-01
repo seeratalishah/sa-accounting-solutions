@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import {
   Navbar,
   Collapse,
@@ -24,7 +24,7 @@ import {
   SunIcon,
   UserGroupIcon,
 } from "@heroicons/react/24/solid";
-import logo from "../assets/Accountingg.png";
+import logo from "../assets/saaa.png";
 import { NavLink, useNavigate } from "react-router-dom";
 import { primaryButton } from "../utilities/cssHelper";
 
@@ -235,7 +235,7 @@ export function NavbarWithMegaMenu() {
     <Navbar className="w-full max-w-full px-0 border-none rounded-none shadow-b-sm fixed top-0 bg-white z-10 px-8">
       <div className="w-full max-w-[1300px] mx-auto flex items-center justify-between">
         <NavLink to="/">
-          <img src={logo} alt="logo" className="h-[70px]" />
+          <img src={logo} alt="logo" className="h-[80px]" />
         </NavLink>
         <div className="hidden lg:block">
           <NavList activeItem={activeItem} setActiveItem={setActiveItem} />
@@ -249,7 +249,7 @@ export function NavbarWithMegaMenu() {
               setActiveItem("contact");
             }}
           >
-            Contact
+            <span className="text-[16px]">Contact</span>
           </Button>
         </div>
         <IconButton
@@ -277,7 +277,7 @@ export function NavbarWithMegaMenu() {
               setActiveItem("contact");
             }}
           >
-            Contact
+            <span className="text-[14px]">Contact</span>
           </Button>
         </div>
       </Collapse>

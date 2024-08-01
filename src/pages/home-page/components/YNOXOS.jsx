@@ -1,6 +1,5 @@
 import React from "react";
 import { YNOXOSFData } from "../data";
-import { IconCard } from "../../../components/IconCard";
 import { Typography } from "@material-tailwind/react";
 import { cardParaStyles, headingStyles } from "../../../utilities/cssHelper";
 import { ServiceCard } from "../../../components/ServiceCard";
@@ -16,10 +15,9 @@ const YNOXOS = () => {
       </Typography>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full justify-items-center">
         {YNOXOSFData.map((item, index) => {
-          const IconComponent = item.icon;
           return (
             <div key={index} className="flex justify-center items-center">
-              <ServiceCard item={item} IconComponent={IconComponent} />
+              <ServiceCard item={item} />
             </div>
           );
         })}

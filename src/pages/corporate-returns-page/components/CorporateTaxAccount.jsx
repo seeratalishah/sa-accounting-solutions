@@ -6,12 +6,11 @@ import {
   subHeadingStyles,
 } from "../../../utilities/cssHelper";
 import { Button, Typography } from "@material-tailwind/react";
-import { Fa42Group, FaPlus } from "react-icons/fa6";
-import faqImg from "../../../assets/faq-img (2).png";
 import { useNavigate } from "react-router-dom";
 import { FAQsData } from "../../our-approach-page/data";
+import { FaPlus } from "react-icons/fa6";
 
-const CloudPayroll = () => {
+const CorporateTaxAccount = () => {
   const [collapsedIndices, setCollapsedIndices] = useState([]);
   const navigate = useNavigate();
 
@@ -73,7 +72,9 @@ const CloudPayroll = () => {
             className={`mt-6 ${primaryButton}`}
             onClick={() => navigate("/contact")}
           >
-            Still have questions? Contact us!
+            <span className="text-[16px]">
+              Still have questions? Contact us!
+            </span>
           </Button>
         </div>
         {/* Divider */}
@@ -120,4 +121,4 @@ const CloudPayroll = () => {
   );
 };
 
-export default CloudPayroll;
+export default CorporateTaxAccount;

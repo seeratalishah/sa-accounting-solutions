@@ -1,6 +1,4 @@
 import React from "react";
-import lightSwooshBottom from "../../../assets/light-swoosh-bottom.svg";
-import lightSwooshTop from "../../../assets/light-swoosh-top.svg";
 import { ImageCard } from "../../../components/ImageCard";
 import { servicesData } from "../data";
 
@@ -10,7 +8,7 @@ const ServicesMap = () => {
       {servicesData.map((item, index) => {
         return (
           <div key={index} className="flex justify-center items-center w-full">
-            <ImageCard item={item}/>
+            <ImageCard item={item} />
           </div>
         );
       })}

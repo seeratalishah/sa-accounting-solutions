@@ -8,8 +8,9 @@ import {
 import { FAQsData } from "../data";
 import { Button, Typography } from "@material-tailwind/react";
 import { FaPlus } from "react-icons/fa6";
-import faqImg from "../../../assets/faq-img (2).png";
 import { useNavigate } from "react-router-dom";
+
+import faqImg from "../../../assets/faq-img (2).png";
 
 const FAQs = () => {
   const [collapsedIndices, setCollapsedIndices] = useState([]);
@@ -33,8 +34,14 @@ const FAQs = () => {
             Cloud Accounting FAQs.
           </Typography>
           <img src={faqImg} alt="faq-image" />
-          <Button size="md" className={`mt-6 ${primaryButton}`} onClick={() => navigate("/contact")}>
-            Still have questions? Contact us!
+          <Button
+            size="md"
+            className={`mt-6 ${primaryButton}`}
+            onClick={() => navigate("/contact")}
+          >
+            <span className="text-[16px]">
+              Still have questions? Contact us!
+            </span>
           </Button>
         </div>
         {/* Divider */}

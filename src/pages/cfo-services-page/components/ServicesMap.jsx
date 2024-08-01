@@ -1,6 +1,4 @@
 import React from "react";
-import lightSwooshBottom from "../../../assets/light-swoosh-bottom.svg";
-import lightSwooshTop from "../../../assets/light-swoosh-top.svg";
 import { ImageCard } from "../../../components/ImageCard";
 import { servicesData } from "../data";
 import { Typography } from "@material-tailwind/react";
@@ -9,7 +7,9 @@ import { headingStyles } from "../../../utilities/cssHelper";
 const ServicesMap = () => {
   return (
     <div className="flex flex-col items-center gap-2">
-      <Typography variant="h1" className={headingStyles}>Check out our other solutions:</Typography>
+      <Typography variant="h1" className={headingStyles}>
+        Check out our other solutions:
+      </Typography>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full justify-items-center">
         {servicesData.map((item, index) => {
           return (

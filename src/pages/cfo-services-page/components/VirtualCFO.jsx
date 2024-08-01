@@ -1,5 +1,5 @@
-import { Button, Typography } from "@material-tailwind/react";
 import React from "react";
+import { Button, Typography } from "@material-tailwind/react";
 import { useNavigate } from "react-router-dom";
 import {
   whiteLongParaStyles,
@@ -9,6 +9,7 @@ import {
 
 import blueSwooshBottom from "../../../assets/blue-swoosh-bottom.svg";
 import blueSwooshTop from "../../../assets/blue-swoosh-top.svg";
+import { FaCalendar } from "react-icons/fa";
 
 const VirtualCFO = () => {
   const navigate = useNavigate();
@@ -64,10 +65,11 @@ const VirtualCFO = () => {
               <a href="#" className="inline-block">
                 <Button
                   size="md"
-                  className={`mt-6 ${primaryButton}`}
-                  onClick={() => navigate("/about")}
+                  className={`mt-6 flex items-center gap-2 ${primaryButton}`}
+                  onClick={() => navigate("/contact")}
                 >
-                  Schedule a consult
+                  <FaCalendar size={18} />
+                  <span className="text-[16px]">Schedule A Consult</span>
                 </Button>
               </a>
             </div>

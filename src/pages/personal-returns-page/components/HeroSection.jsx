@@ -32,8 +32,12 @@ const HeroSection = () => {
           </Typography>
         </div>
         <div className="flex gap-2 w-full justify-center sm:justify-center md:justify-start lg:justify-start">
-          <Button size="md" className={primaryButton}>
-            Get Stared Now
+          <Button
+            size="md"
+            className={primaryButton}
+            onClick={() => navigate("/contact")}
+          >
+            <span className="text-[16px]"> Get Stared Now</span>
           </Button>
         </div>
       </div>

@@ -1,5 +1,5 @@
-import { Button, Typography } from "@material-tailwind/react";
 import React from "react";
+import { Button, Typography } from "@material-tailwind/react";
 import {
   cardBlueParaStyles,
   cardParaStyles,
@@ -18,7 +18,7 @@ const CalendlyMeeting = () => {
           Ready to take the next step towards financial success?
         </Typography>
         <Typography variant="paragraph" className={cardParaStyles}>
-          <strong>Schedule a consultation with Ledgerly today!</strong> Our
+          <strong>Schedule A Consultation with Ledgerly today!</strong> Our
           expert team is here to discuss your unique needs and tailor our
           services to meet your goals. To set up your consultation, simply use
           the calendar to schedule a time that works for you.
@@ -29,7 +29,7 @@ const CalendlyMeeting = () => {
         <div>
           <a href="#contact-form" className="inline-block">
             <Button size="md" className={primaryButton}>
-              Still Have Questions?
+              <span className="text-[16px]">Still Have Questions?</span>
             </Button>
           </a>
         </div>

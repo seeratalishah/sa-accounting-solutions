@@ -1,10 +1,10 @@
 import React from "react";
+import { Testimonial } from "../../components/Testimonials";
 import AccountingDoneDeff from "./components/AccountingDoneDiff";
 import WWOCard from "./components/WWOCard";
 import Services from "./components/Services";
 import OurEthos from "./components/OurEthos";
 import EOS from "./components/EOS";
-import { Testimonial } from "../../components/Testimonials";
 
 const AboutPage = () => {
   return (
@@ -26,7 +26,7 @@ const AboutPage = () => {
         </div>
       </section>
       <section className="my-[60px]">
-          <EOS />
+        <EOS />
       </section>
       <section className="my-[60px] px-8">
         <div className="max-w-[1300px] mx-auto">

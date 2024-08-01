@@ -1,5 +1,4 @@
 import React from "react";
-import newAccounting from "../../../assets/home-img.png";
 import { Button, Typography } from "@material-tailwind/react";
 import {
   headingStyles,
@@ -8,6 +7,8 @@ import {
   secondaryButton,
 } from "../../../utilities/cssHelper";
 import { useNavigate } from "react-router-dom";
+
+import newAccounting from "../../../assets/home-img.png";
 
 const NGAccounting = () => {
   const navigate = useNavigate();
@@ -31,11 +32,19 @@ const NGAccounting = () => {
           </Typography>
         </div>
         <div className="flex gap-2 w-full justify-center sm:justify-center md:justify-start lg:justify-start">
-          <Button size="md" className={primaryButton}>
-            What We Do
+          <Button
+            size="md"
+            className={primaryButton}
+            onClick={() => navigate("/solutions")}
+          >
+            <span className="text-[16px]">What We Do</span>
           </Button>
-          <Button size="md" className={secondaryButton} onClick={() => navigate("/about")}>
-            Who We Are
+          <Button
+            size="md"
+            className={secondaryButton}
+            onClick={() => navigate("/about")}
+          >
+            <span className="text-[16px]">Who We Are</span>
           </Button>
         </div>
       </div>

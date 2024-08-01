@@ -1,9 +1,7 @@
 import React from "react";
 import { ourEthosData } from "../../about-page/data";
-import { IconCard } from "../../../components/IconCard";
 import { Typography } from "@material-tailwind/react";
 import {
-  cardBlueParaStyles,
   cardParaStyles,
   headingStyles,
 } from "../../../utilities/cssHelper";

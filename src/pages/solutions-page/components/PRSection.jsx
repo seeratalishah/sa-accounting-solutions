@@ -1,5 +1,4 @@
 import React from "react";
-import accountingDiffWay from "../../../assets/about-img.png";
 import { Button, Typography } from "@material-tailwind/react";
 import { useNavigate } from "react-router-dom";
 import {
@@ -7,6 +6,8 @@ import {
   longParaStyles,
   primaryButton,
 } from "../../../utilities/cssHelper";
+
+import accountingDiffWay from "../../../assets/about-img.png";
 
 const PRSection = () => {
   const navigate = useNavigate();
@@ -32,9 +33,9 @@ const PRSection = () => {
           <Button
             size="md"
             className={primaryButton}
-            onClick={() => navigate("/our-approach")}
+            onClick={() => navigate("/personal-returns")}
           >
-            Learn More
+            <span className="text-[16px]">Learn More</span>
           </Button>
         </div>
       </div>

@@ -1,5 +1,4 @@
 import React from "react";
-import accountingDiffWay from "../../../assets/about-img.png";
 import { Button, Typography } from "@material-tailwind/react";
 import { useNavigate } from "react-router-dom";
 import {
@@ -7,6 +6,8 @@ import {
   longParaStyles,
   primaryButton,
 } from "../../../utilities/cssHelper";
+
+import accountingDiffWay from "../../../assets/about-img.png";
 
 const AccountingDoneDeff = () => {
   const navigate = useNavigate();
@@ -17,7 +18,10 @@ const AccountingDoneDeff = () => {
           <Typography variant="h1" className={headingStyles}>
             Accounting. <span className="text-blue-600">Done Differently.</span>
           </Typography>
-          <Typography variant="paragraph" className={`max-w-[750px] md:pr-[30px] lg:pr-[30px] ${longParaStyles}`}>
+          <Typography
+            variant="paragraph"
+            className={`max-w-[750px] md:pr-[30px] lg:pr-[30px] ${longParaStyles}`}
+          >
             We’re the new breed of numbers driven, tech-savvy accountants that
             see accounting solutions as an opportunity to transform accounting
             into an engine for growth and a source of competitive advantage. We
@@ -34,7 +38,8 @@ const AccountingDoneDeff = () => {
             className={primaryButton}
             onClick={() => navigate("/our-approach")}
           >
-            Our Approach
+            <span className="text-[16px]"> Our Approach</span>
+            
           </Button>
         </div>
       </div>

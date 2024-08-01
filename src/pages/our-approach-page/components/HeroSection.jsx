@@ -1,15 +1,13 @@
 import React from "react";
-import ourApproach from "../../../assets/our-approach.png";
-import { Button, Typography } from "@material-tailwind/react";
-import { useNavigate } from "react-router-dom";
+import { Typography } from "@material-tailwind/react";
 import {
   headingStyles,
   longParaStyles,
-  primaryButton,
 } from "../../../utilities/cssHelper";
 
+import ourApproach from "../../../assets/our-approach.png";
+
 const HeroSection = () => {
-  const navigate = useNavigate();
   return (
     <div className="flex items-center gap-4 w-full flex-col lg:flex-row md:flex-row">
       <div className="order-2 md:order-1 lg:order-1 md:w-[60%] lg:w-[70%] w-full sm:w-full flex flex-col gap-8 justify-center items-center lg:items-start lg:text-left text-center">

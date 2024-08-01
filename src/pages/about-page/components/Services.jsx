@@ -1,9 +1,9 @@
 import React from "react";
 import { servicesData } from "../data";
-import { IconCard } from "../../../components/IconCard";
+import { ServiceCard } from "../../../components/ServiceCard";
+
 import lightSwooshBottom from "../../../assets/light-swoosh-bottom.svg";
 import lightSwooshTop from "../../../assets/light-swoosh-top.svg";
-import { ServiceCard } from "../../../components/ServiceCard";
 
 const Services = () => {
   return (
@@ -15,7 +15,6 @@ const Services = () => {
       <div className="bg-[#F3FCFE] w-full flex items-center justify-center py-16 px-8">
         <div className="max-w-[1300px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full justify-items-center">
           {servicesData.map((item, index) => {
-            const IconComponent = item.icon;
             return (
               <div
                 key={index}
@@ -23,8 +22,6 @@ const Services = () => {
               >
                 <ServiceCard
                   item={item}
-                  IconComponent={IconComponent}
-                  iconColor="text-blue-600"
                 />
               </div>
             );

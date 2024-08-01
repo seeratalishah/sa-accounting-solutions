@@ -1,7 +1,7 @@
 import React from "react";
 import ScheduleConsult from "../solutions-page/components/ScheduleConsult";
 import Testimonial from "../../components/Testimonials";
-import CloudPayroll from "./components/CorporateTaxAccount";
+import CorporateTaxAccount from "./components/CorporateTaxAccount";
 import HeroSection from "./components/HeroSection";
 import TaxLaws from "./components/TaxLaws";
 import ServicesMap from "./components/ServicesMap";
@@ -23,7 +23,7 @@ const CorporateReturnsPage = () => {
       </section>
       <section className="my-[60px] px-8">
         <div className="max-w-[1300px] mx-auto">
-          <CloudPayroll />
+          <CorporateTaxAccount />
         </div>
       </section>
       <section className="my-[60px] px-8">

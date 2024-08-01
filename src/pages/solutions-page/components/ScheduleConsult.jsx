@@ -1,13 +1,15 @@
-import { Button, Typography } from "@material-tailwind/react";
 import React from "react";
-import lightSwooshBottom from "../../../assets/light-swoosh-bottom.svg";
-import lightSwooshTop from "../../../assets/light-swoosh-top.svg";
+import { Button, Typography } from "@material-tailwind/react";
 import {
   primaryButton,
   whiteHeadingStyles,
   whiteLongParaStyles,
 } from "../../../utilities/cssHelper";
 import { useNavigate } from "react-router-dom";
+
+import lightSwooshBottom from "../../../assets/light-swoosh-bottom.svg";
+import lightSwooshTop from "../../../assets/light-swoosh-top.svg";
+import { FaCalendar } from "react-icons/fa6";
 
 const ScheduleConsult = () => {
   const navigate = useNavigate();
@@ -36,8 +38,13 @@ const ScheduleConsult = () => {
           </div>
           <div>
             <a href="#" className="inline-block">
-              <Button size="md" className={primaryButton} onClick={() => navigate("/contact")}>
-                Schedule A Consult
+              <Button
+                size="md"
+                className={`flex items-center gap-2 ${primaryButton}`}
+                onClick={() => navigate("/contact")}
+              >
+                <FaCalendar size={18} />
+                <span className="text-[16px]">Schedule A Consult</span>
               </Button>
             </a>
           </div>

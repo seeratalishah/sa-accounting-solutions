@@ -7,9 +7,10 @@ import {
 } from "../../../utilities/cssHelper";
 import { Button, Typography } from "@material-tailwind/react";
 import { Fa42Group, FaPlus } from "react-icons/fa6";
-import faqImg from "../../../assets/faq-img (2).png";
 import { useNavigate } from "react-router-dom";
 import { FAQsData } from "../../our-approach-page/data";
+import SericesList from "../../../components/SericesList";
+import { payRollSerData } from "../data";
 
 const CloudPayroll = () => {
   const [collapsedIndices, setCollapsedIndices] = useState([]);
@@ -29,38 +30,15 @@ const CloudPayroll = () => {
           <Typography variant="h1" className={headingStyles}>
             Here’s some of the benefits to our cloud payroll services.
           </Typography>
-          <div className="flex flex-col gap-6 my-6">
-            <div className="flex justify-between items-center border border-gray-300 rounded-lg shadow-b-lg py-4 px-6">
-              <Fa42Group size={64} className="text-blue-600" />
-              <span className="text-[34px] text-black-100">title</span>
-            </div>
-            <div className="flex justify-between items-center border border-gray-200 rounded-lg shadow-sm py-4 px-6">
-              <Fa42Group size={64} className="text-blue-600" />
-              <span className="text-[34px] text-black-100">title</span>
-            </div>
-            <div className="flex justify-between items-center border border-gray-200 rounded-lg shadow-sm py-4 px-6">
-              <Fa42Group size={64} className="text-blue-600" />
-              <span className="text-[34px] text-black-100">title</span>
-            </div>
-            <div className="flex justify-between items-center border border-gray-200 rounded-lg shadow-sm py-4 px-6">
-              <Fa42Group size={64} className="text-blue-600" />
-              <span className="text-[34px] text-black-100">title</span>
-            </div>
-            <div className="flex justify-between items-center border border-gray-200 rounded-lg shadow-sm py-4 px-6">
-              <Fa42Group size={64} className="text-blue-600" />
-              <span className="text-[34px] text-black-100">title</span>
-            </div>
-            <div className="flex justify-between items-center border border-gray-200 rounded-lg shadow-sm py-4 px-6">
-              <Fa42Group size={64} className="text-blue-600" />
-              <span className="text-[34px] text-black-100">title</span>
-            </div>
-          </div>
+          <SericesList data={payRollSerData} />
           <Button
             size="md"
             className={`mt-6 ${primaryButton}`}
             onClick={() => navigate("/contact")}
           >
-            Still have questions? Contact us!
+            <span className="text-[16px]">
+              Still have questions? Contact us!
+            </span>
           </Button>
         </div>
         {/* Divider */}

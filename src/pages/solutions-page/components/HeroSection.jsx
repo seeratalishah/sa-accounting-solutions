@@ -1,13 +1,13 @@
 import React from "react";
-import ourApproach from "../../../assets/our-approach.png";
-import { Button, Typography } from "@material-tailwind/react";
+import { Typography } from "@material-tailwind/react";
 import { useNavigate } from "react-router-dom";
 import {
   cardBlueParaStyles,
   headingStyles,
   longParaStyles,
-  primaryButton,
 } from "../../../utilities/cssHelper";
+
+import ourApproach from "../../../assets/our-approach.png";
 
 const HeroSection = () => {
   const navigate = useNavigate();
