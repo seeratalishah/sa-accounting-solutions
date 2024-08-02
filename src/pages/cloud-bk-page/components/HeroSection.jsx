@@ -1,5 +1,4 @@
 import React from "react";
-import ourApproach from "../../../assets/our-approach.png";
 import { Typography } from "@material-tailwind/react";
 import {
   cardBlueParaStyles,

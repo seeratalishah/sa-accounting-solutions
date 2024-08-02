@@ -7,7 +7,6 @@ import {
   primaryButton,
 } from "../../../utilities/cssHelper";
 
-import accountingDiffWay from "../../../assets/about-img.png";
 import { personalReturnSvg } from "../../../utilities/svgs";
 
 const PRSection = () => {

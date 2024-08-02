@@ -7,7 +7,6 @@ import {
   primaryButton,
 } from "../../../utilities/cssHelper";
 
-import accountingDiffWay from "../../../assets/about-img.png";
 import { cloudBKSvg } from "../../../utilities/svgs";
 
 const CBSection = () => {

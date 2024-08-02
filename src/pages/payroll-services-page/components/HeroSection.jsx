@@ -8,7 +8,6 @@ import {
   subBlueHeadingStyles,
 } from "../../../utilities/cssHelper";
 
-import ourApproach from "../../../assets/our-approach.png";
 import { payrollSvg } from "../../../utilities/svgs";
 
 const HeroSection = () => {

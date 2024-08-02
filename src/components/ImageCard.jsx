@@ -1,6 +1,5 @@
 import { Typography, Button } from "@material-tailwind/react";
-import { headingStyles, primaryButton } from "../utilities/cssHelper";
-import newAccounting from "../assets/faq-img.png";
+import { primaryButton } from "../utilities/cssHelper";
 import { useNavigate } from "react-router-dom";
 
 export function ImageCard({ item }) {

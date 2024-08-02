@@ -7,7 +7,6 @@ import {
   primaryButton,
 } from "../../../utilities/cssHelper";
 
-import accountingDiffWay from "../../../assets/about-img.png";
 import { aboutSvg } from "../../../utilities/svgs";
 
 const AccountingDoneDeff = () => {

@@ -8,7 +8,6 @@ import {
 } from "../../../utilities/cssHelper";
 import { useNavigate } from "react-router-dom";
 
-import newAccounting from "../../../assets/home-img.png";
 import { homeSvg } from "../../../utilities/svgs";
 
 const NGAccounting = () => {

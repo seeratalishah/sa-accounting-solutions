@@ -2,7 +2,6 @@ import React from "react";
 import { Typography } from "@material-tailwind/react";
 import { headingStyles, longParaStyles } from "../../../utilities/cssHelper";
 
-import ourApproach from "../../../assets/our-approach.png";
 import { approachScg } from "../../../utilities/svgs";
 
 const HeroSection = () => {

@@ -10,8 +10,6 @@ import { Button, Typography } from "@material-tailwind/react";
 import { FaPlus } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 
-import faqImg from "../../../assets/faq-img (2).png";
-
 const FAQs = () => {
   const [collapsedIndices, setCollapsedIndices] = useState([]);
   const navigate = useNavigate();
