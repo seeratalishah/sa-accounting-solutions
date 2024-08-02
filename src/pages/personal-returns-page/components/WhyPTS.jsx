@@ -16,7 +16,7 @@ const WhyPTS = () => {
       {/* Main content */}
       <div className="bg-[#F3FCFE] w-full flex items-center justify-center py-16 px-8">
         <div className="max-w-[1300px] flex flex-col items-center">
-          <Typography variant="h1" className={headingStyles}>
+          <Typography variant="h1" className={`text-center ${headingStyles}`}>
             Why Choose Our Personal Tax Services?
           </Typography>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full justify-items-center mt-10">

@@ -25,16 +25,22 @@ const FAQs = () => {
       <div className=" text-white py-4 w-full grid grid-cols-1 md:grid-cols-2 gap-6 relative">
         {/* Left Section - Heading */}
         <div className="mb-4 md:mb-0">
-          <Typography variant="h1" className={headingStyles}>
+          <Typography
+            variant="h1"
+            className={`text-center md:text-left ${headingStyles}`}
+          >
             Cloud Accounting FAQs.
           </Typography>
-          <Typography variant="paragraph" className={longParaStyles}>
+          <Typography
+            variant="paragraph"
+            className={`text-center md:text-left ${longParaStyles}`}
+          >
             Cloud Accounting FAQs.
           </Typography>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="100%"
-            height="489.223"
+            height="400"
             viewBox="0 0 694.59 489.223"
           >
             <g id="faq-vector" transform="translate(-212.527 -2876.182)">
@@ -471,7 +477,7 @@ const FAQs = () => {
           </svg>
           <Button
             size="md"
-            className={`mt-6 ${primaryButton}`}
+            className={`mt-16 hidden md:block ${primaryButton}`}
             onClick={() => navigate("/contact")}
           >
             <span className="text-[16px]">
@@ -496,8 +502,9 @@ const FAQs = () => {
                   </Typography>
                   <FaPlus
                     size={24}
-                    className="text-blue-600 cursor-pointer"
+                    className="text-blue-600 cursor-pointer flex-none" // Added flex-none
                     onClick={() => toggleCollapse(index)}
+                    style={{ minWidth: "24px", minHeight: "24px" }} // Added explicit width and height
                   />
                 </div>
                 <div
@@ -518,6 +525,14 @@ const FAQs = () => {
             );
           })}
         </div>
+
+        <Button
+          size="md"
+          className={`mt-6 block md:hidden ${primaryButton}`}
+          onClick={() => navigate("/contact")}
+        >
+          <span className="text-[16px]">Still have questions? Contact us!</span>
+        </Button>
       </div>
     </div>
   );

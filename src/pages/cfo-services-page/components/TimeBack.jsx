@@ -15,12 +15,12 @@ const TimeBack = () => {
       {/* Main content */}
       <div className="bg-[#F3FCFE] w-full flex items-center justify-center py-16 px-8">
         <div className="max-w-[1300px] flex flex-col items-center">
-          <Typography variant="h1" className={headingStyles}>
+          <Typography variant="h1" className={`text-center ${headingStyles}`}>
             Get Your Time Back!
           </Typography>
           <Typography
             variant="paragraph"
-            className={`max-w-[750px] md:pr-[30px] lg:pr-[30px] ${longParaStyles}`}
+            className={`max-w-[750px] md:pr-[30px] lg:pr-[30px] text-center ${longParaStyles}`}
           >
             Stop wasting time wading through spreadsheets and struggling to come
             up with a financial forecast on your own. Get a better return on

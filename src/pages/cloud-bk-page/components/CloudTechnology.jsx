@@ -27,13 +27,13 @@ const CloudTechnology = () => {
       <div className=" text-white py-4 w-full grid grid-cols-1 md:grid-cols-2 gap-6 relative">
         {/* Left Section - Heading */}
         <div className="mb-4 md:mb-0">
-          <Typography variant="h1" className={headingStyles}>
+          <Typography variant="h1" className={`text-center md:text-left ${headingStyles}`}>
             Benefits of Cloud Technology.
           </Typography>
           <SericesList data={cloudBKData} />
           <Button
             size="md"
-            className={`mt-6 ${primaryButton}`}
+            className={`mt-16 hidden md:block ${primaryButton}`}
             onClick={() => navigate("/contact")}
           >
             <span className="text-[16px]">
@@ -58,8 +58,9 @@ const CloudTechnology = () => {
                   </Typography>
                   <FaPlus
                     size={24}
-                    className="text-blue-600 cursor-pointer"
+                    className="text-blue-600 cursor-pointer flex-none"
                     onClick={() => toggleCollapse(index)}
+                    style={{ minWidth: "24px", minHeight: "24px" }} // Added explicit width and height
                   />
                 </div>
                 <div
@@ -80,6 +81,15 @@ const CloudTechnology = () => {
             );
           })}
         </div>
+        <Button
+            size="md"
+            className={`mt-6 block md:hidden ${primaryButton}`}
+            onClick={() => navigate("/contact")}
+          >
+            <span className="text-[16px]">
+              Still have questions? Contact us!
+            </span>
+          </Button>
       </div>
     </div>
   );

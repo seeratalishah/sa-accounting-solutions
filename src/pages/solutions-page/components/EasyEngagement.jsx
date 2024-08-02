@@ -10,10 +10,10 @@ import { NumberCard } from "../../../components/NumberCard";
 const EasyEngagement = () => {
   return (
     <div className="flex flex-col items-center">
-      <Typography variant="h1" className={headingStyles}>
+      <Typography variant="h1" className={`text-center ${headingStyles}`}>
         Easy Engagement.
       </Typography>
-      <Typography variant="paragraph" className={`mb-10 ${cardParaStyles}`}>
+      <Typography variant="paragraph" className={`mb-10 text-center ${cardParaStyles}`}>
         A better accounting experience is only 3 steps away:
       </Typography>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full justify-items-center">

@@ -6,10 +6,10 @@ import { cardParaStyles, headingStyles } from "../../../utilities/cssHelper";
 const PFTD = () => {
   return (
     <div className="flex flex-col items-center">
-      <Typography variant="h1" className={headingStyles}>
+      <Typography variant="h1" className={`text-center ${headingStyles}`}>
         People focused. Technology driven.
       </Typography>
-      <Typography variant="paragraph" className={`mb-10 ${cardParaStyles}`}>
+      <Typography variant="paragraph" className={`mb-10 text-center ${cardParaStyles}`}>
         Here are some of our favourite tools
       </Typography>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full justify-items-center">

@@ -7,7 +7,7 @@ import { headingStyles } from "../../../utilities/cssHelper";
 const ServicesMap = () => {
   return (
     <div className="flex flex-col items-center gap-2">
-      <Typography variant="h1" className={`mb-10 ${headingStyles}`}>
+      <Typography variant="h1" className={`mb-10 text-center ${headingStyles}`}>
         Check out our other solutions
       </Typography>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full justify-items-center">

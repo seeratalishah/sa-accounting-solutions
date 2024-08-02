@@ -11,10 +11,10 @@ import {
 const OurEthos = () => {
   return (
     <div className="flex flex-col items-center">
-      <Typography variant="h1" className={headingStyles}>
+      <Typography variant="h1" className={`text-center ${headingStyles}`}>
         Our Ethos.
       </Typography>
-      <Typography variant="paragraph" className={cardParaStyles}>
+      <Typography variant="paragraph" className={`text-center ${cardParaStyles}`}>
         The values that drive our business, our solutions and our brand.
       </Typography>
       <Typography

@@ -1,5 +1,5 @@
 export const corporateReturnsSvg = `
-<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="531.732" viewBox="0 0 703.283 531.732">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="400" viewBox="0 0 703.283 531.732">
   <g id="corporate-tax-vector" transform="translate(-1024.273 -240.478)">
     <path id="Path_827" data-name="Path 827" d="M469.038,669.087c51.257-54.943,35.07-187.772,36.149-321.808S524.072,78,472.815,26.074C421.558-25.246,300.7,6.754,224.623,56.867S117.253,175.2,102.685,226.525C88.657,278.449,91.355,313.468,66,376.863,41.177,439.655-11.7,530.824,2.33,585.767c14.568,54.943,96.039,73.66,196.4,94.792C298.541,701.087,417.242,724.03,469.038,669.087Z" transform="translate(1727.557 240.479) rotate(90)" fill="#31b0cf"></path>
     <g id="_lt_Layer_gt_" data-name="&amp;lt;Layer&amp;gt;" transform="translate(1050.578 294.42)">
@@ -78,7 +78,7 @@ export const corporateReturnsSvg = `
 `;
 
 export const payrollSvg = `
-<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="547.911" viewBox="0 0 698.314 547.911">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="400" viewBox="0 0 698.314 547.911">
   <g id="payroll-services-vector" transform="translate(-1005.958 -292.656)">
     <path id="Path_827" data-name="Path 827" d="M411.931,664.36c45.016-54.555,30.8-186.445,31.748-319.534S460.264,77.448,415.248,25.89C370.231-25.067,264.088,6.706,197.274,56.465s-94.3,117.5-107.091,168.46c-12.32,51.557-9.951,86.328-32.222,149.276-21.8,62.348-68.235,152.873-55.915,207.428C14.84,636.183,86.392,654.768,174.53,675.75,262.193,696.133,366.441,718.915,411.931,664.36Z" transform="translate(1704.273 310.75) rotate(90)" fill="#31b0cf"></path>
     <g id="_lt_Layer_gt_" data-name="&amp;lt;Layer&amp;gt;" transform="translate(1062.346 292.656)">
@@ -137,7 +137,7 @@ export const payrollSvg = `
 `;
 
 export const personalReturnSvg = `
-<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="514.026" viewBox="0 0 718.479 514.026">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="400" viewBox="0 0 718.479 514.026">
   <g id="personal-taxes-vector" transform="translate(-930 -304.867)">
     <path id="Path_827" data-name="Path 827" d="M438.835,32.333c47.956,51.948,32.812,177.538,33.822,304.27s17.668,254.6-30.288,303.7c-47.956,48.523-161.032,18.268-232.21-29.114S109.7,499.3,96.073,450.776c-13.125-49.094-10.6-82.2-34.327-142.145C38.526,249.261-10.945,163.061,2.18,111.112,15.81,59.164,92.035,41.467,185.928,21.487,279.317,2.077,390.374-19.616,438.835,32.333Z" transform="translate(1648.479 304.867) rotate(90)" fill="#31b0cf"></path>
     <ellipse id="Ellipse_478" data-name="Ellipse 478" cx="68.5" cy="68" rx="68.5" ry="68" transform="translate(1064 365.885)" fill="#fff"></ellipse>
@@ -200,7 +200,7 @@ export const personalReturnSvg = `
 `;
 
 export const cloudBKSvg = `
-<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="528.168" viewBox="0 0 703.284 528.168">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="400" viewBox="0 0 703.284 528.168">
   <g id="cloud-bookkeeping-vector" transform="translate(-1024.273 -312.354)">
     <path id="Path_827" data-name="Path 827" d="M469.038,669.087c51.257-54.943,35.07-187.772,36.149-321.808S524.072,78,472.815,26.074C421.558-25.246,300.7,6.754,224.623,56.867S117.253,175.2,102.685,226.525C88.657,278.449,91.355,313.468,66,376.863,41.177,439.655-11.7,530.824,2.33,585.767c14.568,54.943,96.039,73.66,196.4,94.792C298.541,701.087,417.242,724.03,469.038,669.087Z" transform="translate(1024.273 840.521) rotate(-90)" fill="#31b0cf"></path>
     <g id="_lt_Layer_gt_" data-name="&amp;lt;Layer&amp;gt;" transform="translate(1024.273 312.352)">
@@ -295,7 +295,7 @@ export const cloudBKSvg = `
 `;
 
 export const cfoSvg = `
-<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="532.913" viewBox="0 0 681.975 532.913">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="400" viewBox="0 0 681.975 532.913">
   <g id="cfo-services-vector" transform="translate(-987.461 -276.857)">
     <path id="Path_827" data-name="Path 827" d="M392.182,648.815c42.858-53.278,29.324-182.083,30.226-312.058S438.2,75.635,395.34,25.285C352.482-24.481,251.427,6.549,187.817,55.144S98.04,169.9,85.86,219.662c-11.73,50.351-9.474,84.308-30.677,145.783C34.43,426.335-9.782,514.741,1.948,568.019c12.181,53.278,80.3,71.428,164.214,91.92C249.623,679.845,348.873,702.093,392.182,648.815Z" transform="translate(1669.437 292.359) rotate(90)" fill="#31b0cf"></path>
     <g id="_lt_Layer_gt_" data-name="&amp;lt;Layer&amp;gt;" transform="translate(1033.935 276.857)">
@@ -722,7 +722,7 @@ export const homeSvg = `
 <svg
           xmlns="http://www.w3.org/2000/svg"
           width="100%"
-          height="561.754"
+          height="400"
           viewBox="0 0 744.207 561.754"
         >
           <g
@@ -1330,7 +1330,7 @@ export const homeSvg = `
 `;
 
 export const aboutSvg = `
-<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="627.565" viewBox="0 0 789.49 627.565">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="400" viewBox="0 0 789.49 627.565">
   <g id="about-hero" transform="translate(-1011.902 -265.154)">
     <path id="Path_826" data-name="Path 826" d="M451.277,61.081C534.371,98.47,669.946,129.117,714.3,203.9S712.43,396.97,628.711,479.1c-83.094,81.521-203.674,127.491-311.134,115.232C210.117,581.464,115.152,510.364,43.929,428.23-26.67,346.1-74.152,252.93-52.91,181.216S58.923,58.629,130.147,21.853c70.6-37.389,122.454-60.681,164.314-50.874S367.558,23.692,451.277,61.081Z" transform="translate(1743.375 861.453) rotate(-180)" fill="#31b0cf"></path>
     <g id="_lt_Layer_gt_" data-name="&amp;lt;Layer&amp;gt;" transform="translate(1075.195 378.523)">
@@ -1408,7 +1408,7 @@ export const aboutSvg = `
 `;
 
 export const approachScg = `
-<svg xmlns="http://www.w3.org/2000/svg" width="640.217" height="565.565" viewBox="0 0 640.217 565.565">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="400" viewBox="0 0 640.217 565.565">
   <g id="our-approach-vector" transform="translate(-992.533 -298.369)">
     <path id="Path_1057" data-name="Path 1057" d="M489.484-3.368c52.2,57.418,53.8,163.018,30.516,262.6-23.288,99.979-71.069,193.132-138.927,213.61-67.456,20.478-154.988-32.122-243.724-77.092-88.335-44.97-177.473-81.91-204.776-148.563C-94.731,180.93-59.8,85.368.429,26.344s145.753-81.91,240.11-88.736C334.5-69.218,437.687-60.786,489.484-3.368Z" transform="translate(1069.379 386.541)" fill="#31b0cf"></path>
     <g id="_lt_Layer_gt_" data-name="&amp;lt;Layer&amp;gt;" transform="translate(1016.029 298.369)">

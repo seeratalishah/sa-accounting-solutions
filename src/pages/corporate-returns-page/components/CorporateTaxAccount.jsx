@@ -25,20 +25,20 @@ const CorporateTaxAccount = () => {
       <div className=" text-white py-4 w-full grid grid-cols-1 md:grid-cols-2 gap-6 relative">
         {/* Left Section - Heading */}
         <div className="mb-4 md:mb-0">
-          <Typography variant="h1" className={headingStyles}>
+          <Typography variant="h1" className={`text-center md:text-left ${headingStyles}`}>
             Why you need a Corporate Tax Accountant.
           </Typography>
           <div className="flex flex-col gap-6 my-6">
             <Typography
               variant="paragraph"
-              className={`max-w-[750px] md:pr-[30px] lg:pr-[30px] ${longParaStyles}`}
+              className={`max-w-[750px] md:pr-[30px] lg:pr-[30px] text-center md:text-left ${longParaStyles}`}
             >
               A small business can greatly benefit from the expertise of a
               corporate tax accountant for several crucial reasons.
             </Typography>
             <Typography
               variant="paragraph"
-              className={`max-w-[750px] md:pr-[30px] lg:pr-[30px] ${longParaStyles}`}
+              className={`max-w-[750px] md:pr-[30px] lg:pr-[30px] text-center md:text-left ${longParaStyles}`}
             >
               Firstly, tax regulations are complex and constantly changing,
               making it challenging for business owners to stay compliant and
@@ -49,7 +49,7 @@ const CorporateTaxAccount = () => {
             </Typography>
             <Typography
               variant="paragraph"
-              className={`max-w-[750px] md:pr-[30px] lg:pr-[30px] ${longParaStyles}`}
+              className={`max-w-[750px] md:pr-[30px] lg:pr-[30px] text-center md:text-left ${longParaStyles}`}
             >
               Secondly, having a tax expert on board can help prevent costly
               mistakes or audits by accurately preparing tax returns and
@@ -60,7 +60,7 @@ const CorporateTaxAccount = () => {
             </Typography>
             <Typography
               variant="paragraph"
-              className={`max-w-[750px] md:pr-[30px] lg:pr-[30px] ${longParaStyles}`}
+              className={`max-w-[750px] md:pr-[30px] lg:pr-[30px] text-center md:text-left ${longParaStyles}`}
             >
               In essence, a corporate tax accountant is an indispensable partner
               for small businesses, ensuring financial efficiency, compliance,
@@ -69,7 +69,7 @@ const CorporateTaxAccount = () => {
           </div>
           <Button
             size="md"
-            className={`mt-6 ${primaryButton}`}
+            className={`mt-16 hidden md:block ${primaryButton}`}
             onClick={() => navigate("/contact")}
           >
             <span className="text-[16px]">
@@ -94,8 +94,9 @@ const CorporateTaxAccount = () => {
                   </Typography>
                   <FaPlus
                     size={24}
-                    className="text-blue-600 cursor-pointer"
+                    className="text-blue-600 cursor-pointer flex-none"
                     onClick={() => toggleCollapse(index)}
+                    style={{ minWidth: "24px", minHeight: "24px" }} // Added explicit width and height
                   />
                 </div>
                 <div
@@ -116,6 +117,15 @@ const CorporateTaxAccount = () => {
             );
           })}
         </div>
+        <Button
+            size="md"
+            className={`mt-6 block md:hidden ${primaryButton}`}
+            onClick={() => navigate("/contact")}
+          >
+            <span className="text-[16px]">
+              Still have questions? Contact us!
+            </span>
+          </Button>
       </div>
     </div>
   );
