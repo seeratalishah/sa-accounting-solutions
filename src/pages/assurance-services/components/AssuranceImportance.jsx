@@ -5,13 +5,15 @@ import {
   whiteLongParaStyles,
   primaryButton,
   whiteHeadingStyles,
+  whiteSubHeadingStyles,
 } from "../../../utilities/cssHelper";
 
 import blueSwooshBottom from "../../../assets/blue-swoosh-bottom.svg";
 import blueSwooshTop from "../../../assets/blue-swoosh-top.svg";
 import { FaCalendar } from "react-icons/fa6";
+import { AssuranceImprotance } from "../data";
 
-const TaxLaws = () => {
+const AssuranceImportance = () => {
   const navigate = useNavigate();
   return (
     <div className="w-full flex flex-col items-center">
@@ -24,40 +26,32 @@ const TaxLaws = () => {
           {/* Left Section - Heading */}
           <div className="flex-none md:flex-1 md:text-left mb-4 md:mb-0">
             <Typography variant="h1" className={whiteHeadingStyles}>
-              Tax laws and rules are in a constant state of flux.
+            Why is assurance accounting important?
             </Typography>
           </div>
           {/* Divider */}
           <div className="hidden md:block w-px bg-gray-700 mx-6"></div>
           {/* Right Section - Content */}
-          <div className="flex flex-col gap-6">
-            <Typography
-              variant="paragraph"
-              className={`max-w-[750px] ${whiteLongParaStyles}`}
-            >
-              Accounting professionals keep up to date so you don’t have to.
-              With every law that changes, we make sure you’re covered.
-            </Typography>
-            <Typography
-              variant="paragraph"
-              className={`max-w-[750px] ${whiteLongParaStyles}`}
-            >
-              Take control of your business finances and make better decisions.
-              Take the guesswork out of taxes and let us show you how accounting
-              has changed, for the better.
-            </Typography>
-            <div className="flex justify-center md:justify-start">
-              <a href="#" className="inline-block">
-                <Button
-                  size="md"
-                  className={`mt-6 flex items-center gap-2 ${primaryButton}`}
-                  onClick={() => navigate("/contact")}
-                >
-                  <FaCalendar size={18} />
-                  <span className="text-[16px]">Schedule Consultation</span>
-                </Button>
-              </a>
-            </div>
+          <div className="flex flex-col gap-6 py-4">
+            {AssuranceImprotance.map((item, index) => {
+              const IconComponent = item.icon;
+              return (
+                <div className="flex flex-col pb-4 md:ml-4 lg:ml-4 border-b border-gray-700">
+                  <div className="flex items-start md:items-center lg:items-center gap-4 mb-3">
+                    <IconComponent size={32} className="text-blue-600" />
+                    <Typography variant="h2" className={whiteSubHeadingStyles}>
+                      {item.title}
+                    </Typography>
+                  </div>
+                  <Typography
+                    variant="paragraph"
+                    className={`max-w-[750px] ${whiteLongParaStyles}`}
+                  >
+                    {item.desc}
+                  </Typography>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
@@ -68,4 +62,5 @@ const TaxLaws = () => {
   );
 };
 
-export default TaxLaws;
+export default AssuranceImportance;
+

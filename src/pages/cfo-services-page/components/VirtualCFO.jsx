@@ -69,7 +69,7 @@ const VirtualCFO = () => {
                   onClick={() => navigate("/contact")}
                 >
                   <FaCalendar size={18} />
-                  <span className="text-[16px]">Schedule A Consult</span>
+                  <span className="text-[16px]">Schedule Consultation</span>
                 </Button>
               </a>
             </div>

@@ -8,7 +8,7 @@ const SJSF = () => {
   return (
     <div className="flex flex-col items-center">
       <Typography variant="h1" className={`text-center ${headingStyles}`}>
-        Stop Juggling. Start Focusing.
+      Stop Multitasking. Start Concentrating.
       </Typography>
       <Typography variant="paragraph" className={`mb-10 text-center ${cardParaStyles}`}>
         Integrated accounting solutions that move your business forward.

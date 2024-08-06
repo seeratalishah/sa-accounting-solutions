@@ -19,8 +19,10 @@ const CalendlyMeeting = () => {
           Ready to take the next step towards financial success?
         </Typography>
         <Typography variant="paragraph" className={cardParaStyles}>
-          <strong className="font-bold">Schedule A Consultation with Ledgerly today!</strong> Our
-          expert team is here to discuss your unique needs and tailor our
+          <strong className="font-bold">
+            Schedule Consultationation with Ledgerly today!
+          </strong>{" "}
+          Our expert team is here to discuss your unique needs and tailor our
           services to meet your goals. To set up your consultation, simply use
           the calendar to schedule a time that works for you.
         </Typography>

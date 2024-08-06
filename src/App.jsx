@@ -12,6 +12,9 @@ import PayrollServicesPage from "./pages/payroll-services-page";
 import CFOServicesPage from "./pages/cfo-services-page";
 import CorporateReturnsPage from "./pages/corporate-returns-page";
 import PersonalReturnsPage from "./pages/personal-returns-page";
+import AssuranceServices from "./pages/assurance-services";
+import ProfessionalCorporations from "./pages/professional-corporations";
+import Incorporation from "./pages/incorporation";
 
 const App = () => {
   return (
@@ -21,12 +24,15 @@ const App = () => {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/our-approach" element={<OurApproachPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/assurance-services" element={<AssuranceServices />} />
         <Route path="/solutions" element={<SolutionsPage />} />
         <Route path="/cloud-bookkeeping" element={<CloudBKPage />} />
         <Route path="/payroll-services" element={<PayrollServicesPage />} />
         <Route path="/CFO-services" element={<CFOServicesPage />} />
         <Route path="/corporate-returns" element={<CorporateReturnsPage />} />
         <Route path="/personal-returns" element={<PersonalReturnsPage />} />
+        <Route path="/professional-corporations" element={<ProfessionalCorporations />} />
+        <Route path="/incorporation" element={<Incorporation />} />
       </Route>
     </Routes>
   );

@@ -17,18 +17,17 @@ const NGAccounting = () => {
       <div className="order-2 md:order-1 lg:order-1 md:w-[50%] w-full sm:w-full flex flex-col gap-8 justify-center items-center lg:items-start lg:text-left text-center">
         <div className="flex flex-col gap-4 items-center lg:items-start text-center lg:text-left md:text-left">
           <Typography variant="h1" className={headingStyles}>
-            Welcome to a <span className="text-blue-600">New Generation</span>{" "}
-            of Accounting.
+            Welcome to the <span className="text-blue-600">Next Era</span> of Accounting Innovation.
           </Typography>
           <Typography
             variant="paragraph"
             className={`max-w-[750px] md:pr-[30px] lg:pr-[30px] ${longParaStyles}`}
           >
-            We understand that dealing with your business finances can be
-            stressful. That’s why we made it our mission to help thousands of
-            small business owners just like you, spend less time on all the
-            soul-sapping stuff like bookkeeping, payroll and tax, and focus more
-            on what they do best – growing their business.
+            We recognize that managing your business finances can be daunting.
+            That’s why we are dedicated to helping thousands of small business
+            owners like you spend less time on tedious tasks such as
+            bookkeeping, payroll, and taxes, and more time focusing on what they
+            excel at – growing their business.
           </Typography>
         </div>
         <div className="flex gap-2 w-full justify-center sm:justify-center md:justify-start lg:justify-start">
@@ -49,7 +48,6 @@ const NGAccounting = () => {
         </div>
       </div>
       <div className="order-1 md:order-2 lg:order-2 md:w-[50%] w-full sm:w-full flex justify-center md:justify-end lg:justify-end items-center">
-        
         <div dangerouslySetInnerHTML={{ __html: homeSvg }}></div>
       </div>
     </div>

@@ -23,7 +23,7 @@ const GoodFitCard = () => {
           {/* Left Section - Heading */}
           <div className="flex-none md:flex-1 md:text-left mb-4 md:mb-0">
             <Typography variant="h1" className={whiteHeadingStyles}>
-              We’re more than just accountants.
+              We go beyond traditional accounting.
             </Typography>
           </div>
           {/* Divider */}
@@ -34,20 +34,20 @@ const GoodFitCard = () => {
               variant="paragraph"
               className={`max-w-[750px] ${whiteLongParaStyles}`}
             >
-              We are ambitious accounting professionals turned disruptive
-              entrepreneurs who noticed that the accounting industry wasn’t
-              evolving with the times or with the needs of small business owners
-              in mind.
+              We are innovative accounting professionals who transitioned into
+              disruptive entrepreneurs after realizing that the accounting
+              industry was not keeping pace with modern times or addressing the
+              needs of small business owners.
             </Typography>
             <Typography
               variant="paragraph"
               className={`max-w-[750px] ${whiteLongParaStyles}`}
             >
-              Having significant knowledge and insight into the world of
-              accounting, technology and business process optimization, we
-              formed Ledgerly to re-shape the accounting industry to engage and
-              excite small business owners with better, faster and technology
-              driven accounting services.
+              With extensive knowledge and insight into accounting, technology,
+              and business process optimization, we established SA Accounting
+              Solutions to revolutionize the accounting industry. Our goal is to
+              engage and excite small business owners by offering superior,
+              faster, and technology-driven accounting services.
             </Typography>
             <div className="flex justify-center md:justify-start">
               <a href="#" className="inline-block">
@@ -57,7 +57,7 @@ const GoodFitCard = () => {
                   onClick={() => navigate("/about")}
                 >
                   <span className="text-[16px]">
-                    Find out if we’re a good fit
+                    Discover if We're the Perfect Match
                   </span>
                 </Button>
               </a>

@@ -19,7 +19,7 @@ import {
 } from "@heroicons/react/24/outline";
 import logo from "../assets/logo.png";
 import { NavLink, useNavigate } from "react-router-dom";
-import { primaryButton } from "../utilities/cssHelper";
+import { headingStyles, primaryButton } from "../utilities/cssHelper";
 
 import cb from "../assets/images/icons/cb.png";
 import prr from "../assets/images/icons/prr.png";
@@ -28,6 +28,12 @@ import cr from "../assets/images/icons/cr.png";
 import cfo from "../assets/images/icons/cfo.png";
 
 const navListMenuItems = [
+  {
+    title: "Assurance services",
+    description: "Assisting clients with their assurance needs.",
+    icon: pr,
+    link: "/assurance-services",
+  },
   {
     title: "Cloud Bookkeeping",
     description: "Find the perfect solution for your needs.",
@@ -57,6 +63,24 @@ const navListMenuItems = [
     description: "Reach out to us for assistance or inquiries",
     icon: pr,
     link: "/personal-returns",
+  },
+  {
+    title: "Forecasting and budgeting",
+    description: "Business Forecasting & Budgeting Services in Greater Toronto Area",
+    icon: pr,
+    link: "/forecasting-and-budgeting",
+  },
+  {
+    title: "Incorporation",
+    description: "Incorporation Services in Greater Toronto Area",
+    icon: pr,
+    link: "/incorporation",
+  },
+  {
+    title: "Professional Corporations",
+    description: "Tax Specialists in Greater Toronto Area",
+    icon: pr,
+    link: "/professional-corporations",
   },
 ];
 
@@ -232,9 +256,10 @@ export function NavbarWithMegaMenu() {
 
   return (
     <Navbar className="w-full max-w-full px-0 border-none rounded-none shadow-none fixed top-0 bg-white z-10 px-8">
-      <div className="w-full max-w-[1300px] mx-auto flex items-center justify-between">
+      <div className="w-full max-w-[1300px] mx-auto flex items-center justify-between pt-[32px]">
         <NavLink to="/">
-          <img src={logo} alt="logo" className="h-[80px]" />
+          {/* <img src={logo} alt="logo" className="h-[80px]" /> */}
+          <Typography variant="h1" className={headingStyles}>Accounting Solutions</Typography>
         </NavLink>
         <div className="hidden lg:block">
           <NavList activeItem={activeItem} setActiveItem={setActiveItem} />
