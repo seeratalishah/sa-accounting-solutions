@@ -24,14 +24,13 @@ const BetterPayroll = () => {
           {/* Left Section - Heading */}
           <div className="flex-none md:flex-1 md:text-left mb-4 md:mb-0 md:basis-1/3">
             <Typography variant="h1" className={whiteHeadingStyles}>
-              A better way to payroll.
+            A better way to handle payroll.
             </Typography>
             <Typography
               variant="paragraph"
               className={`max-w-[750px] ${whiteLongParaStyles}`}
             >
-              Employee pay goes beyond just cutting a cheque. We make your
-              payroll better by allowing you to provide:
+              Employee pay goes beyond just cutting a check. We improve your payroll process by enabling you to offer
             </Typography>
           </div>
           {/* Divider */}

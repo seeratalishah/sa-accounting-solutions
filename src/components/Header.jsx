@@ -26,12 +26,17 @@ import prr from "../assets/images/icons/prr.png";
 import pr from "../assets/images/icons/pr.png";
 import cr from "../assets/images/icons/cr.png";
 import cfo from "../assets/images/icons/cfo.png";
+import ass from "../assets/assurance.png";
+import incor from "../assets/incor.png";
+import cor from "../assets/cor.png";
+import fb from "../assets/fb.png";
+import sr from "../assets/sr.png";
 
 const navListMenuItems = [
   {
     title: "Assurance services",
     description: "Assisting clients with their assurance needs.",
-    icon: pr,
+    icon: ass,
     link: "/assurance-services",
   },
   {
@@ -67,20 +72,26 @@ const navListMenuItems = [
   {
     title: "Forecasting and budgeting",
     description: "Business Forecasting & Budgeting Services in Greater Toronto Area",
-    icon: pr,
+    icon: fb,
     link: "/forecasting-and-budgeting",
   },
   {
     title: "Incorporation",
     description: "Incorporation Services in Greater Toronto Area",
-    icon: pr,
+    icon: incor,
     link: "/incorporation",
   },
   {
     title: "Professional Corporations",
     description: "Tax Specialists in Greater Toronto Area",
-    icon: pr,
+    icon: cor,
     link: "/professional-corporations",
+  },
+  {
+    title: "SR & ED services",
+    description: "Scientific Research and Experimental Development",
+    icon: sr,
+    link: "/SR-&-ED-services",
   },
 ];
 

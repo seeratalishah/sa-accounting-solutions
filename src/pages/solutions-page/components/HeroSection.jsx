@@ -1,6 +1,5 @@
 import React from "react";
 import { Typography } from "@material-tailwind/react";
-import { useNavigate } from "react-router-dom";
 import {
   headingStyles,
   longParaStyles,
@@ -10,7 +9,6 @@ import {
 import { corporateReturnsSvg } from "../../../utilities/svgs";
 
 const HeroSection = () => {
-  const navigate = useNavigate();
   return (
     <div className="flex items-center gap-4 w-full flex-col lg:flex-row md:flex-row">
       <div className="order-2 md:order-1 lg:order-1 md:w-[50%] lg:w-[50%] w-full sm:w-full flex flex-col gap-8 justify-center items-center lg:items-start lg:text-left text-center">
@@ -19,16 +17,16 @@ const HeroSection = () => {
             The Future of Accounting.
           </Typography>
           <Typography variant="h2" className={`${subBlueHeadingStyles}`}>
-            Don’t get left behind. Be future ready!
+            Don't get left behind. Prepare for the future!
           </Typography>
           <Typography
             variant="paragraph"
             className={`max-w-[750px] md:pr-[30px] lg:pr-[30px] mt-4 ${longParaStyles}`}
           >
-            We’ve combined the best of breed cloud technology with real-time
-            reporting and expert guidance to create custom paperless solutions
-            that free up your time, save you money and provide you with valuable
-            insights that drive your business forward.
+            We've combined top-tier cloud technology with real-time reporting
+            and expert guidance to create custom paperless solutions that save
+            you time and money, and provide valuable insights to drive your
+            business forward.
           </Typography>
         </div>
       </div>

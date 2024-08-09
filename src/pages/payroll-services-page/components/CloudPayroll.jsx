@@ -27,8 +27,11 @@ const CloudPayroll = () => {
       <div className=" text-white py-4 w-full grid grid-cols-1 md:grid-cols-2 gap-6 relative">
         {/* Left Section - Heading */}
         <div className="mb-4 md:mb-0">
-          <Typography variant="h1" className={`text-center md:text-left ${headingStyles}`}>
-            Here’s some of the benefits to our cloud payroll services.
+          <Typography
+            variant="h1"
+            className={`text-center md:text-left ${headingStyles}`}
+          >
+            Here are some benefits of our cloud payroll services
           </Typography>
           <SericesList data={payRollSerData} />
           <Button
@@ -82,14 +85,12 @@ const CloudPayroll = () => {
           })}
         </div>
         <Button
-            size="md"
-            className={`mt-6 block md:hidden ${primaryButton}`}
-            onClick={() => navigate("/contact")}
-          >
-            <span className="text-[16px]">
-              Still have questions? Contact us!
-            </span>
-          </Button>
+          size="md"
+          className={`mt-6 block md:hidden ${primaryButton}`}
+          onClick={() => navigate("/contact")}
+        >
+          <span className="text-[16px]">Still have questions? Contact us!</span>
+        </Button>
       </div>
     </div>
   );

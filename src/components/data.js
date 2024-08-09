@@ -1,16 +1,31 @@
 export const testimonialData = [
   {
-    comment:
-      "Patrick [and the team] have been the best accountants I've worked with. [They] have provided tools that saves me time and get organized, and also helps give me sound advice for tax planning. Would highly recommend Ledgerly to anybody seeking accounting services, thanks Patrick [and team]!",
+    comment: "Great service Thanks Ivy League",
+    userName: "Frank and Joanne",
+    rating: "",
+    avatar: "",
+    position: "Otterspoor",
   },
   {
-    comment: "Patrick [and the team] have been the best accountants I've worked with. [They] have provided tools that saves me time and get organized, and also helps give me sound advice for tax planning. Would highly recommend Ledgerly to anybody seeking accounting services, thanks Patrick [and team]!",
+    comment: "Excellent customer service. Equipments here are amazing.",
+    userName: "Robin Fernandes",
+    rating: "",
+    avatar: "",
+    position: "",
   },
   {
-    comment: "Pa Would highly recommend Ledgerly to anybody seeking accounting services, thanks Patrick [and team]!",
+    comment: "I was looking for a used CTL and got it touch with Dean Filipetti. He found a,machine which was in Northern Ontario and said he could bring it to Stoney Creek to have a look at it...",
+    userName: "RickytreeandLand Shaube",
+    rating: "",
+    avatar: "https://lh3.googleusercontent.com/a-/ALV-UjVKRtmWX1MMFynnziR76P7ekPd_x5jH73Bz3WJtZp1uyWA=s128-c0x00000000-cc-rp-mo",
+    position: "",
   },
   {
-    comment: "Patrick and the team have exceeded every expectation we had of our accountant. Ledgerly handles our personal, real estate and corporate files, and has blown away the previous (large) firms that we have worked with. The time and attention to detail has helped us run more efficient operations and increased our profitability. We highly recommend the Ledgerly team for all your accounting needs.",
+    comment: "This company is great! Francis Barreto is my main man. All the workers are very friendly and hard working. I have been working with this company for 5 years + now and will continue...",
+    userName: "YEMI OMOLA",
+    rating: "",
+    avatar: "",
+    position: "",
   },
 ];
 
@@ -25,4 +40,3 @@ export const locations = [
   { lat: -3.746, lng: -38.524, name: "Location 4" },
   // Add more locations as needed
 ];
-

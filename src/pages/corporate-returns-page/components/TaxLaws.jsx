@@ -24,7 +24,7 @@ const TaxLaws = () => {
           {/* Left Section - Heading */}
           <div className="flex-none md:flex-1 md:text-left mb-4 md:mb-0">
             <Typography variant="h1" className={whiteHeadingStyles}>
-              Tax laws and rules are in a constant state of flux.
+              Tax laws and regulations are constantly changing.
             </Typography>
           </div>
           {/* Divider */}
@@ -35,16 +35,16 @@ const TaxLaws = () => {
               variant="paragraph"
               className={`max-w-[750px] ${whiteLongParaStyles}`}
             >
-              Accounting professionals keep up to date so you don’t have to.
-              With every law that changes, we make sure you’re covered.
+              Our accounting professionals stay up to date so you don’t have to.
+              With every change in the law, we ensure you’re covered.
             </Typography>
             <Typography
               variant="paragraph"
               className={`max-w-[750px] ${whiteLongParaStyles}`}
             >
               Take control of your business finances and make better decisions.
-              Take the guesswork out of taxes and let us show you how accounting
-              has changed, for the better.
+              Eliminate the guesswork from taxes and let us show you how
+              accounting has improved, for the better.
             </Typography>
             <div className="flex justify-center md:justify-start">
               <a href="#" className="inline-block">

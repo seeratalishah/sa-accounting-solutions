@@ -20,11 +20,11 @@ const CalendlyMeeting = () => {
         </Typography>
         <Typography variant="paragraph" className={cardParaStyles}>
           <strong className="font-bold">
-            Schedule Consultationation with Ledgerly today!
+            Schedule a consultation with SA Accounting Solutions today!
           </strong>{" "}
           Our expert team is here to discuss your unique needs and tailor our
           services to meet your goals. To set up your consultation, simply use
-          the calendar to schedule a time that works for you.
+          the calendar to choose a time that works for you.
         </Typography>
         <Typography variant="paragraph" className={`my-10 ${cardParaStyles}`}>
           We look forward to helping you achieve financial excellence.

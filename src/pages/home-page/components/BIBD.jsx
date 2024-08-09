@@ -40,15 +40,15 @@ export function BIBDCard() {
         <Typography
           variant="h1"
           color="white"
-          className={`text-center mb-5 ${whiteHeadingStyles}`}
+          className={`text-center ${whiteHeadingStyles}`}
         >
           Better Information. Better Decisions.
         </Typography>
         <Typography
           variant="paragraph"
-          className={`text-center mb-5 ${whiteLongParaStyles}`}
+          className={`text-center mb-10 ${whiteLongParaStyles}`}
         >
-          Actionable insights delivered how and when you need them.
+          Practical insights provided exactly when and how you need them.
         </Typography>
         <Button
           size="md"

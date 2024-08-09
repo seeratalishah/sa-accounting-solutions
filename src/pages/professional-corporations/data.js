@@ -13,54 +13,70 @@ import { HiShieldCheck } from "react-icons/hi";
 import { GiFreedomDove } from "react-icons/gi";
 import { GrSettingsOption } from "react-icons/gr";
 
+import cb from "../../assets/service-icons/cb-service.png";
+import payroll from "../../assets/service-icons/payroll-service.png";
+import cr from "../../assets/service-icons/cr-service.png";
+import cfo from "../../assets/service-icons/cfo-service.png";
+import pr from "../../assets/service-icons/pr-service.png";
+import fb from "../../assets/service-icons/fb-service.png";
+import ic from "../../assets/service-icons/ic-service.png";
+import ass from "../../assets/service-icons/ass-service.png";
+import sr from "../../assets/service-icons/sr-service.png";
+
 export const servicesData = [
   {
     id: "1",
-    title: "Payroll Services",
-    svg: payrollSvgCard,
-    link: "payroll-services",
-  },
-  {
-    id: "2",
     title: "Cloud Bookkeeping",
-    svg: cloudBKSvgCard,
+    icon: cb,
     link: "cloud-bookkeeping",
   },
   {
+    id: "2",
+    title: "Payroll Services",
+    icon: payroll,
+    link: "payroll-services",
+  },
+  {
     id: "3",
-    title: "CFO Services",
-    svg: cfoSvgCard,
-    link: "CFO-services",
+    title: "Corporate Returns",
+    icon: cr,
+    link: "corporate-returns",
   },
   {
     id: "4",
-    title: "Personal Returns",
-    svg: personalReturnSvgCard,
-    link: "personal-returns",
+    title: "CFO Services",
+    icon: cfo,
+    link: "CFO-services",
   },
   {
     id: "5",
-    title: "Forecasting and budgeting",
-    svg: payrollSvgCard,
-    link: "/forecasting-and-budgeting",
+    title: "Personal Returns",
+    icon: pr,
+    link: "personal-returns",
   },
   {
     id: "6",
-    title: "Incorporation",
-    svg: cloudBKSvgCard,
-    link: "incorporation",
+    title: "Forecasting and budgeting",
+    icon: fb,
+    link: "/forecasting-and-budgeting",
   },
   {
     id: "7",
-    title: "Professional Corporations",
-    svg: cfoSvgCard,
-    link: "professional-corporations",
+    title: "Incorporation",
+    icon: ic,
+    link: "incorporation",
   },
   {
     id: "8",
-    title: "Corporate Returns",
-    svg: corporateReturnsSvgCard,
-    link: "corporate-returns",
+    title: "Assurance Services",
+    icon: ass,
+    link: "assurance-services",
+  },
+  {
+    id: "9",
+    title: "SR & ED services",
+    icon: sr,
+    link: "SR-&-ED-services",
   },
 ];
 

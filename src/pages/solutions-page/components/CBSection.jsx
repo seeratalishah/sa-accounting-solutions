@@ -22,10 +22,9 @@ const CBSection = () => {
             variant="paragraph"
             className={`max-w-[750px] md:pr-[30px] lg:pr-[30px] ${longParaStyles}`}
           >
-            From day 1, we set you up with the best of breed cloud technology
-            and automate as much of the process as possible so you can focus on
-            running your business and we can focus on analyzing your data and
-            providing valuable insight into your business.
+            From day one, we equip you with top-tier cloud technology and
+            automate processes, allowing you to focus on running your business
+            while we analyze your data and provide valuable insights.
           </Typography>
         </div>
         <div className="flex w-full justify-center sm:justify-center md:justify-start lg:justify-start">

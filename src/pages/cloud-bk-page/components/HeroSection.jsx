@@ -17,20 +17,21 @@ const HeroSection = () => {
             Cloud Bookkeeping.
           </Typography>
           <Typography variant="h2" className={`${subBlueHeadingStyles}`}>
-            Accounting…Anywhere, Anytime!
+            Accounting... Anytime, Anywhere!
           </Typography>
           <Typography
             variant="paragraph"
             className={`max-w-[750px] md:pr-[30px] lg:pr-[30px] mt-4 ${longParaStyles}`}
           >
-            Know exactly where your money is going. We help you keep a pulse on
-            your business to help you make better decisions. Better yet, come
-            tax time, your books are up-to-date so we can maximize your returns.
+            Keep track of your finances effortlessly. We provide insights to
+            help you make informed business decisions. Plus, when tax season
+            arrives, your books are up-to-date, ensuring we maximize your
+            returns.
           </Typography>
         </div>
       </div>
       <div className="order-1 md:order-2 lg:order-2 md:w-[50%] lg:w-[50%] w-full sm:w-full flex justify-center md:justify-end lg:justify-end items-center">
-      <div dangerouslySetInnerHTML={{ __html: cloudBKSvg }}></div>
+        <div dangerouslySetInnerHTML={{ __html: cloudBKSvg }}></div>
       </div>
     </div>
   );

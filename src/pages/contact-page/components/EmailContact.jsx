@@ -72,8 +72,8 @@ const EmailContact = () => {
               variant="paragraph"
               className={`mt-2 mb-10 ${whiteLongParaStyles}`}
             >
-              Not ready for a call, but have questions? Send us a message using
-              the form below and we’ll be sure to get back to you.
+              
+Not ready for a call but have questions? Use the form below to send us a message, and we’ll get back to you promptly.
             </Typography>
             <div className="flex flex-row justify-center gap-6 md:gap-10">
               <div className="flex items-center gap-2 md:gap-4 cursor-pointer hover:text-gray-700">
@@ -82,7 +82,7 @@ const EmailContact = () => {
                   variant="small"
                   className={`${whiteLongParaStyles}`}
                 >
-                  info@ledgerly.ca
+                  info@saaccountingsolutions
                 </Typography>
               </div>
               <div className="flex items-center gap-2 md:gap-4 cursor-pointer hover:text-gray-700">
@@ -91,7 +91,7 @@ const EmailContact = () => {
                   variant="small"
                   className={`${whiteLongParaStyles}`}
                 >
-                  info@ledgerly.ca
+                  (416) 824-6950
                 </Typography>
               </div>
             </div>

@@ -24,16 +24,16 @@ const ScheduleConsult = () => {
           <div>
             <Typography
               variant="h1"
-              className={`text-center mb-5 ${whiteHeadingStyles}`}
+              className={`text-center ${whiteHeadingStyles}`}
             >
-              Ready for a better accounting experience?
+              Looking for an improved accounting experience?
             </Typography>
             <Typography
               variant="paragraph"
-              className={`text-center mb-5 ${whiteLongParaStyles}`}
+              className={`text-center mb-10 ${whiteLongParaStyles}`}
             >
-              Don’t wait; take control of your finances. Schedule your free
-              consult today.
+              Don't wait—take control of your finances. Schedule your free
+              consultation today.
             </Typography>
           </div>
           <div>

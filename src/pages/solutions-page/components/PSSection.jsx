@@ -22,10 +22,10 @@ const PSSection = () => {
             variant="paragraph"
             className={`max-w-[750px] md:pr-[30px] lg:pr-[30px] ${longParaStyles}`}
           >
-            No more rushing to the office at 11pm on a Thursday to enter that
-            last minute timesheet. We will automate your data capture so you can
-            run your payroll from anywhere. We’ll even look after all your
-            reporting, so CRA stays happy.
+            No more late-night trips to the office to enter last-minute
+            timesheets. We automate data capture so you can run your payroll
+            from anywhere. We’ll also handle all your reporting, keeping the CRA
+            satisfied.
           </Typography>
         </div>
         <div className="flex w-full justify-center sm:justify-center md:justify-start lg:justify-start">
@@ -39,7 +39,7 @@ const PSSection = () => {
         </div>
       </div>
       <div className="order-1 md:order-2 lg:order-2 md:w-[50%] w-full sm:w-full flex justify-center md:justify-end lg:justify-end items-center">
-      <div dangerouslySetInnerHTML={{ __html: payrollSvg }}></div>
+        <div dangerouslySetInnerHTML={{ __html: payrollSvg }}></div>
       </div>
     </div>
   );

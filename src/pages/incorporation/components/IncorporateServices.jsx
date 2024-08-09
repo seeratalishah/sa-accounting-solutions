@@ -15,7 +15,7 @@ const IncorporateServices = () => {
       Our Incorporation Services
       </Typography>
       <Typography variant="paragraph" className={`text-center ${cardParaStyles}`}>
-      At Gray Leaf Accounting, we have extensive experience in incorporation laws and tax regulations. We have been helping businesses across Greater Toronto Area and Mississauga incorporate successfully for many years. 
+      At SA Accounting Solutions, we have extensive experience in incorporation laws and tax regulations. We have been helping businesses across Greater Toronto Area and Mississauga incorporate successfully for many years. 
       </Typography>
       <Typography
         variant="lead"

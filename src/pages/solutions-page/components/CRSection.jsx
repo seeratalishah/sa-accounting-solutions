@@ -14,7 +14,7 @@ const CRSection = () => {
   return (
     <div className="flex flex-col lg:flex-row md:flex-row items-center gap-4 w-full">
       <div className="w-full md:w-[50%] flex justify-center lg:justify-start md:justify-start items-center">
-      <div dangerouslySetInnerHTML={{ __html: corporateReturnsSvg }}></div>
+        <div dangerouslySetInnerHTML={{ __html: corporateReturnsSvg }}></div>
       </div>
       <div className="w-full md:w-[50%] flex flex-col gap-8 items-center lg:items-end md:items-end text-center lg:text-left md:text-left">
         <div className="flex flex-col gap-4 items-center lg:items-start text-center lg:text-left md:text-left">
@@ -25,11 +25,10 @@ const CRSection = () => {
             variant="paragraph"
             className={`max-w-[750px] md:pr-[30px] lg:pr-[30px] ${longParaStyles}`}
           >
-            Dreading tax season? You shouldn’t, we are your full-service
-            accounting solution. We’ll look after your books throughout the year
-            and file your return for you. Gone are the days of dragging all
-            those boxes to your accountant and all that back and forth. We make
-            tax time painless.
+            Dreading tax season? You shouldn’t be. We are your full-service
+            accounting solution. We’ll manage your books year-round and file
+            your return for you. Say goodbye to dragging boxes to your
+            accountant and all that back and forth. We make tax time painless.
           </Typography>
         </div>
         <div className="flex w-full justify-center lg:justify-start md:justify-start">

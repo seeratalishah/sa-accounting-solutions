@@ -30,8 +30,8 @@ const HeroSection = () => {
             Experience the peace of mind that comes with having a dedicated CFO
             without the full-time commitment. Unlock growth, savings, and
             financial success with Ledgerly’s CFO services. Your business
-            deserves nothing less than the best in financial leadership –
-            contact us today to get started!
+            deserves the best in financial leadership – contact us today to get
+            started!
           </Typography>
         </div>
         <div className="flex gap-2 w-full justify-center sm:justify-center md:justify-start lg:justify-start">

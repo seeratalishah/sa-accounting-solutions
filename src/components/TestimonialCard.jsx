@@ -37,16 +37,22 @@ const TestimonialCard = ({ item }) => {
         shadow={false}
         className="mx-0 flex items-center gap-4 pt-0 pb-8"
       >
-        <Avatar
-          size="lg"
-          variant="circular"
-          src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
-          alt="tania andrew"
-        />
+        {item.avatar ? (
+          <Avatar
+            size="lg"
+            variant="circular"
+            src={item.avatar}
+            alt={item.userName}
+          />
+        ) : (
+          <div className="flex items-center justify-center w-[75px] h-[58px] bg-blue-600 rounded-full text-white text-lg font-bold">
+            {item.userName.charAt(0)}
+          </div>
+        )}
         <div className="flex w-full flex-col gap-0.5">
           <div className="flex items-center justify-between">
             <Typography variant="lead" className={cardTitle}>
-              Seerat Ali
+              {item.userName}
             </Typography>
             <div className="5 flex items-center gap-0">
               <StarIcon />
@@ -56,11 +62,15 @@ const TestimonialCard = ({ item }) => {
               <StarIcon />
             </div>
           </div>
-          <Typography variant="lead" className="text-md font-normal text-black-100 font-headingFont">Frontend Lead @ Google</Typography>
+          <Typography variant="lead" className="text-md font-normal text-black-100 font-headingFont">
+            {item.position}
+          </Typography>
         </div>
       </CardHeader>
       <CardBody className="mb-6 p-0">
-        <Typography variant="paragraph" className={cardParaStyles}>&quot;{item.comment}&quot;</Typography>
+        <Typography variant="paragraph" className={cardParaStyles}>
+          &quot;{item.comment}&quot;
+        </Typography>
       </CardBody>
     </Card>
   );

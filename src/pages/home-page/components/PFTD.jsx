@@ -7,10 +7,13 @@ const PFTD = () => {
   return (
     <div className="flex flex-col items-center">
       <Typography variant="h1" className={`text-center ${headingStyles}`}>
-        People focused. Technology driven.
+        People-centric. Technology-powered.
       </Typography>
-      <Typography variant="paragraph" className={`mb-10 text-center ${cardParaStyles}`}>
-        Here are some of our favourite tools
+      <Typography
+        variant="paragraph"
+        className={`mb-10 text-center ${cardParaStyles}`}
+      >
+        Here are some of our preferred tools
       </Typography>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full justify-items-center">
         {PFTDData.map((item, index) => {

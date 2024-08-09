@@ -24,7 +24,7 @@ const WhatToExpect = () => {
           {/* Left Section - Heading */}
           <div className="flex-none md:flex-1 md:text-left mb-4 md:mb-0">
             <Typography variant="h1" className={whiteHeadingStyles}>
-              What to expect when you work with Ledgerly:
+              What to expect when you work with SA Accounting Solutions
             </Typography>
           </div>
           {/* Divider */}

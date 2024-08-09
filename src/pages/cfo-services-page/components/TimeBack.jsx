@@ -22,16 +22,15 @@ const TimeBack = () => {
             variant="paragraph"
             className={`max-w-[750px] md:pr-[30px] lg:pr-[30px] text-center ${longParaStyles}`}
           >
-            Stop wasting time wading through spreadsheets and struggling to come
-            up with a financial forecast on your own. Get a better return on
-            your time by hiring a virtual CFO.
+            Stop wasting time wading through spreadsheets and struggling to
+            create financial forecasts on your own. Get a better return on your
+            time by hiring a virtual CFO
           </Typography>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full justify-items-center mt-10">
             {timeBackData.map((item, index) => {
-              const IconComponent = item.icon;
               return (
-                <div key={index} className="flex justify-center items-center">
-                  <IconCard item={item} IconComponent={IconComponent} />
+                <div key={index} className="flex justify-center items-center mn-h-[360px]">
+                  <IconCard item={item} minHeight={360} />
                 </div>
               );
             })}

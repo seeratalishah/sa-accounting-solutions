@@ -35,7 +35,7 @@ const FAQs = () => {
             variant="paragraph"
             className={`text-center md:text-left ${longParaStyles}`}
           >
-            Cloud Accounting FAQs.
+            Let us address the common questions everyone has about cloud accounting.
           </Typography>
           <svg
             xmlns="http://www.w3.org/2000/svg"

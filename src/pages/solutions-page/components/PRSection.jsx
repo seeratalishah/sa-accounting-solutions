@@ -22,11 +22,11 @@ const PRSection = () => {
             variant="paragraph"
             className={`max-w-[750px] md:pr-[30px] lg:pr-[30px] ${longParaStyles}`}
           >
-            Whether you’re a solopreneur, side hustler, or full blown e-commerce
-            mogul; we have the knowledge and insights to make tax season a
-            breeze. We offer convenient, 100% virtual tax preparation services,
-            all from the comfort of your home. We’ll even help you with all your
-            deductions to make sure you get as much money back as possible.
+            Whether you’re a solopreneur, side hustler, or full-blown e-commerce
+            mogul, we have the expertise to make tax season a breeze. Our
+            convenient, 100% virtual tax preparation services can be accessed
+            from the comfort of your home. We'll also help you maximize your
+            deductions to ensure you get the most money back possible.
           </Typography>
         </div>
         <div className="flex w-full justify-center sm:justify-center md:justify-start lg:justify-start">
@@ -40,7 +40,7 @@ const PRSection = () => {
         </div>
       </div>
       <div className="order-1 md:order-2 lg:order-2 md:w-[50%] w-full sm:w-full flex justify-center md:justify-end lg:justify-end items-center">
-      <div dangerouslySetInnerHTML={{ __html: personalReturnSvg }}></div>
+        <div dangerouslySetInnerHTML={{ __html: personalReturnSvg }}></div>
       </div>
     </div>
   );

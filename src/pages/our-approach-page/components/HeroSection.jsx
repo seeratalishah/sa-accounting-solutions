@@ -16,13 +16,7 @@ const HeroSection = () => {
             variant="paragraph"
             className={`max-w-[750px] md:pr-[30px] lg:pr-[30px] ${longParaStyles}`}
           >
-            At Ledgerly, our approach to accounting is a blend of cutting-edge
-            technology and seasoned expertise, meticulously designed to empower
-            small business owners. We recognize that accounting isn’t just about
-            numbers; it’s about fostering financial growth and stability. Our
-            tech-driven foundation leverages innovative tools and cloud-based
-            solutions to streamline financial processes, providing real-time
-            insights into your business’s financial health.
+            At SA Accounting Solutions, we blend cutting-edge technology with seasoned expertise to empower small business owners. We understand that accounting isn’t just about numbers; it’s about fostering financial growth and stability. Our tech-driven approach uses innovative tools and cloud-based solutions to streamline financial processes, offering real-time insights into your business’s financial health..
           </Typography>
         </div>
       </div>

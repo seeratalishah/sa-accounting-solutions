@@ -27,16 +27,16 @@ const HeroSection = () => {
             className={`max-w-[750px] md:pr-[30px] lg:pr-[30px] mt-4 ${longParaStyles}`}
           >
             One of the most specialized types of accounting involves corporate
-            taxes. Many firms are not equipped to do both the bookkeeping and
-            file your return. That’s where we step in. No need to prepare a
-            package for another accountant to file your tax return, we handle it
-            all. We have dedicated teams of accountants that specialize in
-            corporate tax to make tax season a breeze.
+            taxes. Many firms are not equipped to handle both bookkeeping and
+            filing your return. That's where we come in. There's no need to
+            prepare a package for another accountant to file your tax return –
+            we handle it all. Our dedicated teams of accountants specialize in
+            corporate tax, making tax season a breeze.
           </Typography>
         </div>
       </div>
       <div className="order-1 md:order-2 lg:order-2 md:w-[50%] lg:w-[50%] w-full sm:w-full flex justify-center md:justify-end lg:justify-end items-center">
-      <div dangerouslySetInnerHTML={{ __html: corporateReturnsSvg }}></div>
+        <div dangerouslySetInnerHTML={{ __html: corporateReturnsSvg }}></div>
       </div>
     </div>
   );

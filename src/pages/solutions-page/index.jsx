@@ -52,7 +52,7 @@ const SolutionsPage = () => {
           <EasyEngagement />
         </div>
       </section>
-      <section className="my-[60px] px-8">
+      <section className="mb-[60px] mt-[100px] px-8">
         <div className="max-w-[1300px] mx-auto">
           <SABenefits />
         </div>

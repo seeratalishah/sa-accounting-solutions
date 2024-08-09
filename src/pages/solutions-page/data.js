@@ -43,3 +43,24 @@ export const saBenData = [
     desc: "Never worry about talking to us or asking questions, support is included in your package.",
   },
 ];
+
+export const engagementData = [
+  {
+    step: "1",
+    title: "Discovery",
+    paraOne: "Once you reach out, we will connect you with one of our business advisors who will thoroughly understand your business needs. We will also provide you with an overview of the cutting-edge technology we use.",
+    paraTwo: "Don't worry, we know much of this is new to you, so we'll go at your pace and avoid complicated accounting jargon.",
+  },
+  {
+    step: "2",
+    title: "Proposal",
+    paraOne: "We’ve abandoned the outdated hourly fee structure in favor of a flat-rate model. This way, you know the cost upfront, eliminating any surprise bills.",
+    paraTwo: "We will build a package that fits your needs and gives you options. You can scale up or down as you need. No long-term contracts.",
+  },
+  {
+    step: "3",
+    title: "Onboarding",
+    paraOne: "It’s time to meet your team!",
+    paraTwo: "Once you’ve decided on the perfect package for you, we’ll set up a virtual meeting so you can meet all the great people that will support you. We’ll walk you through all the information we need to get you moved over and walk through the systems that align with your specific business needs.",
+  },
+];

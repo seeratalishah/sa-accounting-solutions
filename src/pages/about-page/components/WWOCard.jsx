@@ -23,7 +23,8 @@ const WWOCard = () => {
           {/* Left Section - Heading */}
           <div className="flex-none md:flex-1 md:text-left mb-4 md:mb-0">
             <Typography variant="h1" className={whiteHeadingStyles}>
-              Ledgerly is bringing accounting into the modern age and beyond.
+              SA Accounting Solutions is ushering accounting into the modern age
+              and beyond.
             </Typography>
           </div>
           {/* Divider */}
@@ -34,28 +35,27 @@ const WWOCard = () => {
               variant="paragraph"
               className={`max-w-[750px] ${whiteLongParaStyles}`}
             >
-              If you’re a small business owner, then you probably already know
-              that speaking with your accountant once a year to discuss your
-              financials and scramble to process your tax return is a thing of
-              the past!
+              If you’re a small business owner, you likely already know that the
+              days of meeting with your accountant once a year to discuss your
+              financials and hastily process your tax return are over!
             </Typography>
             <Typography
               variant="paragraph"
               className={`max-w-[750px] ${whiteLongParaStyles}`}
             >
-              These days, with the advent of automation, slick new accounting
-              software and real-time financial reporting, it means that clever,
-              creatively minded accountants (like us) are now uniquely equipped
-              to offer businesses value add strategic advice.
+              Nowadays, with the rise of automation, advanced accounting
+              software, and real-time financial reporting, clever, creatively
+              minded accountants (like us) are uniquely equipped to provide
+              businesses with value-added strategic advice.
             </Typography>
             <Typography
               variant="paragraph"
               className={`max-w-[750px] ${whiteLongParaStyles}`}
             >
-              And with the accounting industry so ripe for disruption, we are
-              stepping in…by embracing automation, enhanced business processes,
-              and cutting-edge cloud technology, we are giving the accounting
-              industry the kick in the pants it so sorely needed.
+              And with the accounting industry primed for disruption, we are
+              stepping in. By embracing automation, improving business
+              processes, and utilizing cutting-edge cloud technology, we are
+              giving the accounting industry the shake-up it has long needed.
             </Typography>
             <div className="flex justify-center md:justify-start">
               <a href="#" className="inline-block">

@@ -10,31 +10,70 @@ import skillset from "../../assets/images/icons/decision.png";
 import productivity from "../../assets/images/icons/productivity.png";
 
 import { cloudBKSvgCard, corporateReturnsSvgCard, payrollSvgCard, personalReturnSvgCard } from "../../utilities/svgs";
+import cb from "../../assets/service-icons/cb-service.png";
+import payroll from "../../assets/service-icons/payroll-service.png";
+import cr from "../../assets/service-icons/cr-service.png";
+import ass from "../../assets/service-icons/ass-service.png";
+import pr from "../../assets/service-icons/pr-service.png";
+import fb from "../../assets/service-icons/fb-service.png";
+import ic from "../../assets/service-icons/ic-service.png";
+import cor from "../../assets/service-icons/cor-service.png";
+import sr from "../../assets/service-icons/sr-service.png";
 
 export const servicesData = [
   {
     id: "1",
-    title: "Payroll Services",
-    link: "payroll-services",
-    svg: payrollSvgCard,
+    title: "Cloud Bookkeeping",
+    icon: cb,
+    link: "cloud-bookkeeping",
   },
   {
     id: "2",
-    title: "Cloud Bookkeeping",
-    link: "cloud-bookkeeping",
-    svg: cloudBKSvgCard,
+    title: "Payroll Services",
+    icon: payroll,
+    link: "payroll-services",
   },
   {
     id: "3",
     title: "Corporate Returns",
+    icon: cr,
     link: "corporate-returns",
-    svg: corporateReturnsSvgCard,
   },
   {
     id: "4",
+    title: "Assurance Services",
+    icon: ass,
+    link: "assurance-services",
+  },
+  {
+    id: "5",
     title: "Personal Returns",
+    icon: pr,
     link: "personal-returns",
-    svg: personalReturnSvgCard,
+  },
+  {
+    id: "6",
+    title: "Forecasting and budgeting",
+    icon: fb,
+    link: "/forecasting-and-budgeting",
+  },
+  {
+    id: "7",
+    title: "Incorporation",
+    icon: ic,
+    link: "incorporation",
+  },
+  {
+    id: "8",
+    title: "Professional Corporations",
+    icon: cor,
+    link: "professional-corporations",
+  },
+  {
+    id: "9",
+    title: "SR & ED services",
+    icon: sr,
+    link: "SR-&-ED-services",
   },
 ];
 

@@ -14,7 +14,7 @@ const CFOSection = () => {
   return (
     <div className="flex flex-col lg:flex-row md:flex-row items-center gap-4 w-full">
       <div className="w-full md:w-[50%] flex justify-center lg:justify-start md:justify-start items-center">
-      <div dangerouslySetInnerHTML={{ __html: cfoSvg }}></div>
+        <div dangerouslySetInnerHTML={{ __html: cfoSvg }}></div>
       </div>
       <div className="w-full md:w-[50%] flex flex-col gap-8 items-center lg:items-end md:items-end text-center lg:text-left md:text-left">
         <div className="flex flex-col gap-4 items-center lg:items-start text-center lg:text-left md:text-left">
@@ -25,11 +25,11 @@ const CFOSection = () => {
             variant="paragraph"
             className={`max-w-[750px] md:pr-[30px] lg:pr-[30px] ${longParaStyles}`}
           >
-            Need help putting a budget or forecast together? Looking to
-            grow/expand but don’t know how? Having trouble getting a bank loan?
-            That’s where we step in. CFO’s have years of experience and can
-            provide significant value to your organization. We can provide the
-            same services without all that added payroll.
+            Need help creating a budget or forecast? Looking to grow or expand
+            but don’t know how? Struggling to get a bank loan? That's where we
+            come in. Our CFOs have years of experience and can offer significant
+            value to your organization, providing the same services without the
+            extra payroll costs.
           </Typography>
         </div>
         <div className="flex w-full justify-center lg:justify-start md:justify-start">

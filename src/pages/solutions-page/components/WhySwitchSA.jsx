@@ -23,7 +23,7 @@ const WhySwitchSA = () => {
           {/* Left Section - Heading */}
           <div className="flex-none md:flex-1 md:text-left mb-4 md:mb-0">
             <Typography variant="h1" className={whiteHeadingStyles}>
-              Why Switch to Ledgerly?
+              Why Switch to SA Accounting Solutions?
             </Typography>
           </div>
           {/* Divider */}
@@ -34,19 +34,18 @@ const WhySwitchSA = () => {
               variant="paragraph"
               className={`max-w-[750px] ${whiteLongParaStyles}`}
             >
-              Let’s face it, you were born to be an entrepreneur, not an
-              accountant. Numbers and paperwork aren’t your thing, and you’re
-              spending too much time trying to make sense of your financials.
+              Let's face it, you were born to be an entrepreneur, not an
+              accountant. Numbers and paperwork aren't your forte, and you're
+              spending too much time trying to decipher your financials.
             </Typography>
             <Typography
               variant="paragraph"
               className={`max-w-[750px] ${whiteLongParaStyles}`}
             >
-              We absolutely love numbers, so let us count the beans for you
-              while you focus on your business. Having significant knowledge and
-              insights in the world of accounting, technology and business
-              optimization, we’re way ahead of the rest and can help tell the
-              story behind your numbers.
+              We absolutely love numbers, so let us handle the details while you
+              focus on your business. With extensive knowledge and insights in
+              accounting, technology, and business optimization, we’re ahead of
+              the curve and can help uncover the story behind your numbers.
             </Typography>
             <div className="flex justify-center md:justify-start">
               <a href="#" className="inline-block">
@@ -55,9 +54,7 @@ const WhySwitchSA = () => {
                   className={`mt-6 ${primaryButton}`}
                   onClick={() => navigate("/about")}
                 >
-                  <span className="text-[16px]">
-                    Find out if we’re a good fit
-                  </span>
+                  <span className="text-[16px]">See if we're a good fit</span>
                 </Button>
               </a>
             </div>

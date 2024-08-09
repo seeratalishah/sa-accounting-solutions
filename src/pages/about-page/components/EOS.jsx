@@ -23,13 +23,13 @@ const EOS = () => {
           <div>
             <Typography
               variant="h1"
-              className={`text-center mb-5 ${whiteHeadingStyles}`}
+              className={`text-center ${whiteHeadingStyles}`}
             >
               Ready to transform your business’s financial future?
             </Typography>
             <Typography
               variant="paragraph"
-              className={`text-center mb-5 ${whiteLongParaStyles}`}
+              className={`text-center mb-10 ${whiteLongParaStyles}`}
             >
               Don’t wait; take control of your finances today.
             </Typography>
